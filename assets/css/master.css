@@ -1,0 +1,138 @@
+/* @import url('./reset.css'); */
+@import url('./name.css');
+@import url('./introduction/button.css');
+@import url('./introduction/intro.css');
+@import url('./introduction/interests.css');
+@import url('./links.css');
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Prata&display=swap");
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --color-1: #4444;
+    --color-2: rgb(7, 7, 7);
+    --color-3: #4169E1;
+    --color-4: #191970;
+    --color-5: #483d8b;
+}
+
+/* html/body */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Prata', serif;
+}
+
+
+/* Container Styles */
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.project-container {
+    display: inline-block;
+}
+
+.project {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.container-flex-row {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+}
+
+/* Border Styles */
+.border-bottom {
+    border-bottom: 2px solid var(--color-2);
+}
+
+/* Padding */
+.p-left-5 {
+    padding-left: 5rem;
+}
+
+.p-ar-5 {
+    padding: 5rem;
+}
+
+/* Margins */
+
+/* Margin Left */
+.m-left-2 {
+    margin-left: 2rem;
+}
+
+.m-left-10 {
+    margin-left: 10rem;
+}
+
+/* Margin Top */
+.m-top-2 {
+    margin-top: 2rem;
+}
+
+.m-top-6 {
+    margin-top: 6rem;
+}
+
+.m-top-12 {
+    margin-top: 12rem
+}
+.m-top-18 {
+    margin-top: 18rem;
+}
+.m-top-24 {
+    margin-top: 24rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Text Styling */
+.big-text {
+    font-size: 42px;
+}
+
+.p-text {
+    font-size: 36px;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+/* Button functionality */
+.hide {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+/* Footer */
+
+.footer {
+    width: 100%;
+    background: darkgray;
+    height: 300px;
+}

@@ -1,0 +1,18 @@
+.typed-intro {
+    margin: auto;
+}
+
+.blinky {
+    border-left: .5px solid black;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
