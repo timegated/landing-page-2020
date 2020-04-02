@@ -40,13 +40,14 @@ html {
 }
 
 .project-container {
-    display: inline-block;
+    display: flex;
 }
 
 .project {
-    display: inline-block;
+    flex: 1 250px;
     width: 250px;
     height: 250px;
+    margin-left: 5px;
     border: 1px solid black;
 }
 
@@ -105,6 +106,10 @@ html {
     margin-top: 24rem;
 }
 
+.m-top-42 {
+    margin-top: 42rem;
+}
+
 .text-center {
     text-align: center;
 }
@@ -121,14 +126,7 @@ html {
 .montserrat {
     font-family: 'Montserrat', sans-serif;
 }
-/* Button functionality */
-.hide {
-    display: none;
-}
 
-.block {
-    display: block;
-}
 /* Footer */
 
 .footer {
