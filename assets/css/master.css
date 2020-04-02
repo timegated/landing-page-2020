@@ -56,12 +56,18 @@ html {
     flex-wrap: wrap;
     flex-direction: column;
 }
+
 .container-flex-row {
     display: flex;
     list-style: none;
     margin: 0 auto;
 }
 
+.container-nav-row {
+    display: flex;
+    list-style: none;
+    margin: .5rem auto;
+}
 /* Border Styles */
 .border-bottom {
     border-bottom: 2px solid var(--color-2);
