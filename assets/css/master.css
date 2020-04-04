@@ -24,6 +24,8 @@ html {
 
 body {
     font-family: 'Prata', serif;
+    color: rgb(236, 225, 225);
+    background: rgb(29, 25, 25);
 }
 
 a {
@@ -45,6 +47,7 @@ a {
     width: 250px;
     height: 250px;
     margin-left: 5px;
+    background: rgb(236, 225, 225);
     border: 1px solid black;
 }
 
@@ -69,6 +72,10 @@ a {
 /* Border Styles */
 .border-bottom {
     border-bottom: 2px solid var(--color-2);
+}
+/* Background Colors */
+.bg-black {
+    background: rgb(29, 25, 25);
 }
 
 /* Padding */
@@ -125,10 +132,22 @@ a {
 
 .p-text {
     font-size: 36px;
+    font-weight: bold;
 }
 
 .montserrat {
     font-family: 'Montserrat', sans-serif;
+}
+
+.js-const-color {
+    color: rgb(78, 78, 252);
+}
+
+.js-var-color {
+    color: rgb(143, 186, 241);
+}
+.js-string-color {
+    color: rgb(245, 130, 63)
 }
 /* Intro */
 
@@ -154,8 +173,8 @@ a {
     display: block;
     text-decoration: none;
     border: 1px solid rgb(15, 15, 15);
-    box-shadow: 5px 10px;
-    background: var(--color-2);
+    /* box-shadow: 5px 10px; */
+    background: rgb(245, 130, 63);
     color: white;
     font-weight: bold;
     padding: 1rem;
@@ -177,7 +196,7 @@ a {
 .footer {
     width: 100%;
     background: darkgray;
-    height: 300px;
+    height: 100px;
 }
 
 /* Cursor */
