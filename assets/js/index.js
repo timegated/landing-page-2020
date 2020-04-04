@@ -44,7 +44,7 @@ const typeEffectOnScreen = () => {
        setTimeout(typeEffectOnScreen, 50)
     }
 
-    target.innerHTML = `${character}<span class="blinky"></span>`;
+    target.innerHTML = `${character}<span class="cursor">&nbsp;</span>`;
 }
 
 
