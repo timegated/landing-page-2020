@@ -1,10 +1,4 @@
-/* @import url('./reset.css'); */
-@import url('./name.css');
-@import url('./introduction/button.css');
-@import url('./introduction/intro.css');
-@import url('./introduction/interests.css');
-@import url('./links.css');
-
+@import url('./reset.css');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Prata&display=swap");
 
 :root {
@@ -32,6 +26,9 @@ body {
     font-family: 'Prata', serif;
 }
 
+a {
+    text-decoration: none;
+}
 /* Container Styles */
 
 .container {
@@ -133,6 +130,56 @@ body {
 .montserrat {
     font-family: 'Montserrat', sans-serif;
 }
+/* Intro */
+
+.blinky {
+    border-left: .5px solid black;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: black;
+    }
+}
+
+/* Buttons */
+.nav-button {
+    display: block;
+    text-decoration: none;
+    border: 1px solid rgb(15, 15, 15);
+    box-shadow: 5px 10px;
+    background: var(--color-2);
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 16px;
+    text-align: center;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    width: 96px;
+    border-radius: 10%;
+    font-family: 'Monstserrat', sans-serif;
+}
+
+.nav-button:hover {
+    background: var(--color-5);
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background: darkgray;
+    height: 300px;
+}
+
 /* Cursor */
 .cursor {
     display: inline-block;
@@ -166,11 +213,4 @@ body {
     100% {
         background: #ccc;
     }
-}
-/* Footer */
-
-.footer {
-    width: 100%;
-    background: darkgray;
-    height: 300px;
 }
