@@ -18,8 +18,7 @@ let i = 0;
 let target = document.querySelector('#typedIntro');
 let isTag;
 const { firstName, lastName, job, area, interests, navItems } = about;
-let message = `<pre class="p-text montserrat m-top-2">const person = {<br>      firstName: ${firstName},<br>      lastName: ${lastName},<br>      area: ${area}<br>};<br><br>const techStack = [${interests.join(',  ')}];
-                <br><span class="container-nav-row">const navbar = [${navItems.join(',')}];</span></pre>`;
+let message = `<pre class="p-text montserrat m-top-2">const person = {<br>      firstName: ${firstName},<br>      lastName: ${lastName},<br>      area: ${area}<br>};<br><br>const techStack = [${interests.join(',  ')}];<br><span class="container-nav-row">const navbar = [${navItems.join(',')}];</span></pre>`;
 
 // Creating a keyboard type effect as an introduction
 
