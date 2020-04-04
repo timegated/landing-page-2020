@@ -133,7 +133,40 @@ body {
 .montserrat {
     font-family: 'Montserrat', sans-serif;
 }
+/* Cursor */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background: #ccc;
+    margin-left: .1rem;
+    animation: blink 1s infinite;
+}
 
+.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background: #ccc;
+    }
+
+    49% {
+        background: #ccc;
+    }
+
+    50% {
+        background: transparent;
+    }
+
+    99% {
+        background: transparent;
+    }
+
+    100% {
+        background: #ccc;
+    }
+}
 /* Footer */
 
 .footer {

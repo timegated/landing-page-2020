@@ -8,45 +8,43 @@ const about = {
         '<a href="assets/resume/DJBResume March 2020.pdf" target="_blank" class="nav-button">Resume</a>']
 };
 
-// Iterators
+const { name, job, area, interests, navItems } = about;
 
-let i = 0;
-let j = 0;
+
+// Iterators
+let charIndex = 0;
 
 // Elements
+const typingTarget = document.querySelector('.typed-person');
+const typedNavBar = document.querySelector('.typed-navbar');
+// let isTag;
 
-let target = document.querySelector('#typedIntro');
-let isTag;
-const { name, job, area, interests, navItems } = about;
-let message = `<p class="p-text montserrat m-top-2">const webDev = {<br> \n name: ${name}, 
-                <br>area: ${area}<br>}; <br><span class="montserrat" id="interests"> const techStack = [${interests.join(',  ')}];
-                </span> <br><span class="montserrat container-nav-row">const navbar = [${navItems.join(',')}]</span>;`;
+// Other lines of text I want displayed
+let personText = `const person = {name: ${name}, area: ${area}}`;
+let navText = `const navBar = [${navItems.join(',')}]`;
+
+{/* <br><span class="montserrat" id="interests"> const techStack = [${interests.join(',  ')}]; */}
+{/* </span> <br><span class="montserrat container-nav-row">const navbar = [${navItems.join(',')}]</span>;`; */ }
 
 // Creating a keyboard type effect as an introduction
 
-const typeEffectOnScreen = () => {
-    const character = message.slice(0, i += 1);
-    const currentCharacter = character.slice(-1);
-
-    if (currentCharacter === '<') isTag = true;
-    if (currentCharacter === '>') isTag = false;
-
-    // Recursion
-
-    if (isTag) {
-        return typeEffectOnScreen()
-    } 
-
-    if (currentCharacter === ';') {
-        setTimeout(typeEffectOnScreen, 500)
-    } else {
-       setTimeout(typeEffectOnScreen, 50)
+const typeEffectOnScreen = (string, target) => {
+    let message = Array.from(string)
+    if (charIndex < message.length) {
+        target.innerHTML += message[charIndex]
+        charIndex++
+        setTimeout(() => {
+            typeEffectOnScreen(string, target)
+        }, 50);
     }
-
-    target.innerHTML = `${character}<span class="blinky"></span>`;
 }
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(typeEffectOnScreen, 100)
+    setTimeout(() => {
+        typeEffectOnScreen(personText, typingTarget)
+    }, 1000);
+    setTimeout(() => {
+        typeEffectOnScreen(navText, typedNavBar)
+    }, 3000);
 })
