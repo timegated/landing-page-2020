@@ -140,14 +140,14 @@ a {
 }
 
 .js-const-color {
-    color: rgb(78, 78, 252);
+    color: rgb(39, 39, 248);
 }
 
 .js-var-color {
     color: rgb(143, 186, 241);
 }
 .js-string-color {
-    color: rgb(245, 130, 63)
+    color: rgb(247, 119, 46);
 }
 /* Intro */
 
@@ -174,7 +174,7 @@ a {
     text-decoration: none;
     border: 1px solid rgb(15, 15, 15);
     /* box-shadow: 5px 10px; */
-    background: rgb(245, 130, 63);
+    background: rgb(247, 119, 46);
     color: white;
     font-weight: bold;
     padding: 1rem;
@@ -188,7 +188,7 @@ a {
 }
 
 .nav-button:hover {
-    background: var(--color-5);
+    background: rgb(143, 186, 241);
 }
 
 /* Footer */
