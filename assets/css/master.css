@@ -6,13 +6,6 @@
 @import url('./links.css');
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Prata&display=swap");
-html {
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
 
 :root {
     --color-1: #4444;
@@ -23,14 +16,21 @@ html {
 }
 
 /* html/body */
-
-* {
+html {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Prata', serif;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Prata', serif;
+}
 
 /* Container Styles */
 
@@ -68,6 +68,7 @@ html {
     list-style: none;
     margin: .5rem auto;
 }
+
 /* Border Styles */
 .border-bottom {
     border-bottom: 2px solid var(--color-2);
