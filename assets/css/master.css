@@ -31,6 +31,7 @@ body {
 a {
     text-decoration: none;
 }
+
 /* Container Styles */
 
 .container {
@@ -73,6 +74,7 @@ a {
 .border-bottom {
     border-bottom: 2px solid var(--color-2);
 }
+
 /* Background Colors */
 .bg-black {
     background: rgb(29, 25, 25);
@@ -110,9 +112,11 @@ a {
 .m-top-12 {
     margin-top: 12rem
 }
+
 .m-top-18 {
     margin-top: 18rem;
 }
+
 .m-top-24 {
     margin-top: 24rem;
 }
@@ -139,6 +143,10 @@ a {
     font-family: 'Montserrat', sans-serif;
 }
 
+.courier-new {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .js-const-color {
     color: rgb(39, 39, 248);
 }
@@ -146,9 +154,11 @@ a {
 .js-var-color {
     color: rgb(143, 186, 241);
 }
+
 .js-string-color {
     color: rgb(247, 119, 46);
 }
+
 /* Intro */
 
 .blinky {
