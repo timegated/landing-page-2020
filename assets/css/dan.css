@@ -2,7 +2,7 @@
   display: block;
   width: calc(18 * 20px);
   height: calc(18 * 20px);
-  margin:auto;
+  margin: 1rem;
 }
 #dan::after {
   content: "";
