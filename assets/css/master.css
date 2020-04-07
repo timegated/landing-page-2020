@@ -97,7 +97,9 @@ a {
 .m-left-10 {
     margin-left: 10rem;
 }
-
+.m-left-12 {
+    margin-left: 12rem;
+}
 /* Margin Top */
 .m-top-2 {
     margin-top: 2rem;
