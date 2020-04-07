@@ -24,8 +24,6 @@ html {
 
 body {
     font-family: 'Prata', serif;
-    color: rgb(236, 225, 225);
-    background: rgb(29, 25, 25);
 }
 
 a {
@@ -55,7 +53,7 @@ a {
 .container-flex {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .container-flex-row {
@@ -137,10 +135,12 @@ a {
 .p-text {
     font-size: 36px;
     font-weight: bold;
+    line-height: 1.5em;
 }
 
 .montserrat {
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .courier-new {
@@ -148,15 +148,15 @@ a {
 }
 
 .js-const-color {
-    color: rgb(39, 39, 248);
+    color: #3F51B5;
 }
 
 .js-var-color {
-    color: rgb(143, 186, 241);
+    color: #216bf3c2;
 }
 
 .js-string-color {
-    color: rgb(247, 119, 46);
+    color: #ff5722c9;
 }
 
 /* Intro */
@@ -187,12 +187,11 @@ a {
     background: rgb(247, 119, 46);
     color: white;
     font-weight: bold;
-    padding: 1rem;
+    padding-right: .1rem;
+    padding-left: .1rem;
     font-size: 16px;
     text-align: center;
-    margin-left: .5rem;
-    margin-right: .5rem;
-    width: 96px;
+    width: 100px;
     border-radius: 10%;
     font-family: 'Monstserrat', sans-serif;
 }

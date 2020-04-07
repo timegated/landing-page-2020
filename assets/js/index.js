@@ -3,7 +3,7 @@ const about = {
     lastName: 'Beccaria',
     job: 'Web Developer',
     area: 'Philadelphia, PA',
-    interests: ['javascript', 'reactjs', 'nodejs'],
+    interests: ['javascript','reactjs','nodejs'],
     navItems: ['<a href="#about" class="nav-button">About</a>',
         '<a href="#projects" class="nav-button">Projects</a>',
         '<a href="assets/resume/DJBResume March 2020.pdf" target="_blank" class="nav-button">Resume</a>']
@@ -18,7 +18,7 @@ let i = 0;
 let target = document.querySelector('#typedIntro');
 let isTag;
 const { firstName, lastName, job, area, interests, navItems } = about;
-let message = `<pre class="p-text courier-new m-top-2 js-string-color"><span class="js-const-color">const</span> <span class="js-var-color">person</span> = {<br>      <span class="js-var-color">firstName:</span> ${firstName},<br>      <span class="js-var-color">lastName:</span> ${lastName},<br>      <span class="js-var-color">area:</span> ${area}<br>};<br><br><span class="js-const-color">const</span> <span class="js-var-color">skills</span> = [${interests.join(',  ')}];<br><span class="container-nav-row"><span class="js-const-color">const</span> <span class="js-var-color"> navbar</span> = [${navItems.join(',')}];</span></pre>`;
+let message = `<pre class="p-text courier-new m-top-2 js-string-color"><span class="js-const-color">const</span> <span class="js-var-color">person</span> = {<br>      <span class="js-var-color">firstName:</span> '${firstName}',<br>      <span class="js-var-color">lastName:</span> '${lastName}',<br>      <span class="js-var-color">area:</span> '${area}'<br>};<br><br><span class="js-const-color">const</span> <span class="js-var-color">skills</span> = [${interests.join()}];<br><span class="container-nav-row"><span class="js-const-color">const</span> <span class="js-var-color"> navbar</span> = [${navItems.join()}];</span></pre>`;
 
 // Creating a keyboard type effect as an introduction
 
