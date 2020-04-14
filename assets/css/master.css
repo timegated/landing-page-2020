@@ -24,6 +24,7 @@ html {
 
 body {
     font-family: 'Prata', serif;
+    background: #2c2c2c;
 }
 
 /*Flex-Wrapper*/
@@ -48,7 +49,8 @@ body {
 }
 
 .container-about>p {
-    margin-left: 14rem;
+    color: #efefef;
+    margin-left: 15rem;
     margin-top: 2rem;
 }
 
