@@ -1,10 +1,10 @@
-#dan {
+#cat {
   display: block;
   width: calc(18 * 20px);
   height: calc(18 * 20px);
-  margin: 1rem;
+  margin: auto;
 }
-#dan::after {
+#cat::after {
   content: "";
   display: block;
   width: 20px;
