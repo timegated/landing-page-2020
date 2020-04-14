@@ -26,8 +26,12 @@ body {
     font-family: 'Prata', serif;
 }
 
-a {
-    text-decoration: none;
+/*Flex-Wrapper*/
+
+.wrapper {
+    display: flex;
+    /* margin-left: -8px; */
+    /* margin-right: -8px; */
 }
 
 /* Container Styles */
@@ -37,48 +41,68 @@ a {
     max-width: 1200px;
 }
 
+.container-about {
+    flex: 0 0 50%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.container-about>p {
+    margin-left: 14rem;
+    margin-top: 2rem;
+}
+
 div.intro-container {
-    height: 100vh;
+    margin-top: .1rem;
+    height: 70vh;
+    background: #2c2c2c;
+    border: 1px solid lightblue;
 }
 
 div.typed-intro {
     max-width: 1200px;
-    position: relative;
-    top: 12%;
-    left: 0%;
+    margin: 5rem auto;
+    width: 50%;
 }
 
-.project-container {
-    display: flex;
+.container-projects {
+    flex: 1;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .project {
-    flex: 1 250px;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     margin-left: 5px;
     background: rgb(236, 225, 225);
     border: 1px solid black;
 }
 
-.container-flex {
+.vscode-effect {
+    width: 100%;
+    border: 1px solid lightblue;
+}
+
+.vscode-effect>ul {
+    list-style: none;
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row;
 }
 
-.container-flex-row {
-    display: flex;
-    list-style: none;
-    margin: 0 auto;
+.vscode-effect>ul>li>a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #efefef;
+    text-decoration: none;
+    border: 1px solid lightblue;
+    padding: 4px;
+    font-size: 24px;
 }
-
-.container-nav-row {
-    display: flex;
-    list-style: none;
-    margin: 0 auto;
+.vscode-effect>ul>li>a:hover {
+    cursor: pointer;
+    border: 1px dashed #e86b43fa;
 }
-
 /* Border Styles */
 .border-bottom {
     border-bottom: 2px solid var(--color-2);
@@ -103,9 +127,11 @@ div.typed-intro {
 .m-left-10 {
     margin-left: 10rem;
 }
+
 .m-left-12 {
     margin-left: 12rem;
 }
+
 /* Margin Top */
 .m-top-2 {
     margin-top: 2rem;
@@ -160,11 +186,11 @@ div.typed-intro {
 }
 
 .js-var-color {
-    color: #216bf3c2;
+    color: #759eead6;
 }
 
 .js-string-color {
-    color: #ff5722c9;
+    color: #e86b43fa;
 }
 
 /* Intro */

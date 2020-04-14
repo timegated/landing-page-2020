@@ -25,7 +25,7 @@
     @return $result;
 }
 
-$size: 20px;
+$size: 15px;
 
 $t: #ffff;
 $b: #000;
@@ -37,7 +37,7 @@ $g: #8f8e8e;
 // $t: #000;
 
 
-$cat: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, $t, $t, $t, $t, $t),
+$dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, $t, $t, $t, $t, $t),
     ($t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, $t, $t, $t, $t),
     ($t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t),
     ($t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, $t, $t, $t, $t, $t),
@@ -57,11 +57,11 @@ $cat: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
     ($t, $t, $t, $t, $t, $t, $t, $s, $s, $s, $s, $s, $t, $t, $t, $t, $t, $t, $t, $t, $t, $t, $t));
 
 
-#cat {
+#dan {
     display: block;
     width: calc(18 * #{$size});
     height: calc(18 * #{$size});
-    margin:auto;
+    margin: 1rem;
 
 
     &::after {
@@ -70,6 +70,6 @@ $cat: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
         width: $size;
         height: $size;
         box-shadow:
-            pixelize($cat, $size);
+            pixelize($dan, $size);
     }
 }
