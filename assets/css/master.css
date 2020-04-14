@@ -26,10 +26,6 @@ body {
     font-family: 'Prata', serif;
 }
 
-a {
-    text-decoration: none;
-}
-
 /*Flex-Wrapper*/
 
 .wrapper {
@@ -57,6 +53,7 @@ a {
 }
 
 div.intro-container {
+    margin-top: .1rem;
     height: 70vh;
     background: #2c2c2c;
     border: 1px solid lightblue;
@@ -84,27 +81,27 @@ div.typed-intro {
 
 .vscode-effect {
     width: 100%;
-    height: 30px;
     border: 1px solid lightblue;
 }
 
-.vscode-file {
-    border: 1px solid #e86b43fa;
-    width: 10%;
-    padding: 1px;
+.vscode-effect>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
-.vscode-file-name {
-    width: 100px;
-    margin: 0 0 .1rem auto;
-    border: none;
-    background: #2c2c2c;
+.vscode-effect>ul>li>a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     color: #efefef;
+    text-decoration: none;
     border: 1px solid lightblue;
-    padding: 1px;
+    padding: 4px;
+    font-size: 24px;
 }
-.vscode-file-name:hover {
+.vscode-effect>ul>li>a:hover {
     cursor: pointer;
+    border: 1px dashed #e86b43fa;
 }
 /* Border Styles */
 .border-bottom {
