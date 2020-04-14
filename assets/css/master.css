@@ -31,8 +31,6 @@ body {
 
 .wrapper {
     display: flex;
-    /* margin-left: -8px; */
-    /* margin-right: -8px; */
 }
 
 /* Container Styles */
@@ -43,7 +41,6 @@ body {
 }
 
 .container-about {
-    flex: 0 0 50%;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -110,54 +107,6 @@ div.typed-intro {
     border-bottom: 2px solid var(--color-2);
 }
 
-/* Padding */
-.p-left-5 {
-    padding-left: 5rem;
-}
-
-.p-ar-5 {
-    padding: 5rem;
-}
-
-/* Margins */
-
-/* Margin Left */
-.m-left-2 {
-    margin-left: 2rem;
-}
-
-.m-left-10 {
-    margin-left: 10rem;
-}
-
-.m-left-12 {
-    margin-left: 12rem;
-}
-
-/* Margin Top */
-.m-top-2 {
-    margin-top: 2rem;
-}
-
-.m-top-6 {
-    margin-top: 6rem;
-}
-
-.m-top-12 {
-    margin-top: 12rem
-}
-
-.m-top-18 {
-    margin-top: 18rem;
-}
-
-.m-top-24 {
-    margin-top: 24rem;
-}
-
-.m-top-42 {
-    margin-top: 42rem;
-}
 
 /* Text Styling */
 .big-text {
@@ -198,42 +147,9 @@ div.typed-intro {
 /* Intro */
 
 .blinky {
-    border-left: .5px solid black;
+    border-left: .3px solid black;
+    height: 30px;
     animation: 1s blink step-end infinite;
-}
-
-@keyframes blink {
-
-    from,
-    to {
-        color: transparent;
-    }
-
-    50% {
-        color: black;
-    }
-}
-
-/* Buttons */
-.nav-button {
-    display: block;
-    text-decoration: none;
-    border: 1px solid rgb(15, 15, 15);
-    /* box-shadow: 5px 10px; */
-    background: rgb(247, 119, 46);
-    color: white;
-    font-weight: bold;
-    padding-right: .1rem;
-    padding-left: .1rem;
-    font-size: 16px;
-    text-align: center;
-    width: 100px;
-    border-radius: 10%;
-    font-family: 'Monstserrat', sans-serif;
-}
-
-.nav-button:hover {
-    background: rgb(143, 186, 241);
 }
 
 /* Footer */
@@ -278,3 +194,46 @@ div.typed-intro {
         background: #ccc;
     }
 }
+
+@keyframes blink {
+
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+
+    .p-text {
+        font-size: 18px;
+
+    }
+
+    div.intro-container {
+        width: 100%;
+        margin: 5px auto;
+        height: 30vh;
+    }
+
+    div.typed-intro {
+        width: 85%;
+        margin: 1rem auto;
+    }
+    .vscode-effect>ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
