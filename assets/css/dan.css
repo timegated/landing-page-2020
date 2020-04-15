@@ -1,5 +1,7 @@
 #dan {
   display: block;
+  width: calc(18 * 10px);
+  height: calc(18 * 15px);
   margin: 1rem;
 }
 #dan::after {

@@ -44,12 +44,15 @@ body {
 .container-about {
     margin-top: 12rem;
     margin-bottom: 12rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .container-about>p {
     color: #efefef;
-    margin-left: 15rem;
-    margin-top: 2rem;
+    margin-left: 2rem;
+    flex: 0 0 35%;
+    margin-top: 4rem;
 }
 
 div.intro-container {
@@ -99,12 +102,24 @@ div.typed-intro {
 }
 
 .vscode-effect>ul {
-  position: fixed;
-  top: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
+    position: fixed;
+    top: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.vscode-effect>ul>li {
+    background: black;
+}
+
+.vscode-effect>ul>li:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.vscode-effect>ul>li:last-child {
+    margin-left: 1rem;
 }
 
 .vscode-effect>ul>li>a {
