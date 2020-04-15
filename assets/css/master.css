@@ -54,9 +54,9 @@ body {
 
 div.intro-container {
     margin-top: 1rem;
-    height: 70vh;
+    height: 30vh;
     background: #2c2c2c;
-    border: 1px solid lightblue;
+    box-shadow: 5px 5px 5px 5px black;
 }
 
 div.typed-intro {
@@ -95,13 +95,15 @@ div.typed-intro {
 
 .vscode-effect {
     width: 100%;
-    border: 1px solid lightblue;
 }
 
 .vscode-effect>ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+  position: fixed;
+  top: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
 }
 
 .vscode-effect>ul>li>a {
