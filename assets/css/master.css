@@ -56,7 +56,7 @@ body {
 }
 
 div.intro-container {
-    margin-top: 1rem;
+    margin-top: 12rem;
     height: 30vh;
     background: #2c2c2c;
     box-shadow: 5px 5px 5px 5px black;
@@ -85,10 +85,17 @@ div.typed-intro {
 .project-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    margin: 1rem;
+    align-items: center;
+}
+
+.project-row:nth-child(3) {
+    display:flex;
+    flex-direction: row-reverse;
 }
 
 .project {
+    flex-grow: 1;
     width: 250px;
     height: 250px;
     margin-left: 5px;
@@ -97,6 +104,18 @@ div.typed-intro {
     box-shadow: 5px 5px black;
 }
 
+.project-text {
+    flex-basis: 50%;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: .5rem;
+    background: lightblue;
+}
+.project-text>p {
+    padding: 10px;
+    color:#000;
+    font-weight: bold;
+}
 .vscode-effect {
     width: 100%;
 }
@@ -112,6 +131,7 @@ div.typed-intro {
 
 .vscode-effect>ul>li {
     background: black;
+    padding: 10px;
 }
 
 .vscode-effect>ul>li:nth-child(2) {
@@ -127,8 +147,7 @@ div.typed-intro {
     font-weight: bold;
     color: #efefef;
     text-decoration: none;
-    border: 1px solid lightblue;
-    padding: 4px;
+    padding: 10px;
     font-size: 24px;
 }
 
