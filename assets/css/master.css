@@ -86,18 +86,16 @@ div.typed-intro {
     display: flex;
     flex-direction: row;
     margin: 1rem;
-    align-items: center;
+    align-items: inherit;
 }
 
 .project-row:nth-child(3) {
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
 }
 
 .project {
     flex-grow: 1;
-    width: 250px;
-    height: 250px;
     margin-left: 5px;
     background: #2c2c2c;
     border: 1px solid lightblue;
@@ -105,17 +103,19 @@ div.typed-intro {
 }
 
 .project-text {
-    flex-basis: 50%;
+    flex-basis: 70%;
     color: #000;
     font-family: 'Montserrat', sans-serif;
     margin-left: .5rem;
     background: lightblue;
 }
+
 .project-text>p {
     padding: 10px;
-    color:#000;
+    color: #000;
     font-weight: bold;
 }
+
 .vscode-effect {
     width: 100%;
 }
@@ -264,8 +264,33 @@ div.typed-intro {
 @media screen and (max-width: 700px) {
     .wrapper {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
+    .container-projects {
+        margin: 0;
+    }
+    .project-row {
+        margin: 1rem 0 0 0;
+    }
+    .container-about {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 12rem;
+
+    }
+    .project {
+        flex-grow: 1;
+        margin-left: 5px;
+        background: #2c2c2c;
+        border: 1px solid lightblue;
+        box-shadow: 5px 5px black;
+    }
+    .container-about>p {
+        margin: 0 auto;
+        width: 75%;
+        font-size: 12px;
+    }
+
 
     .p-text {
         font-size: 18px;
@@ -288,6 +313,12 @@ div.typed-intro {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        visibility: hidden;
     }
 
+    .project-text {
+        font-size: 10px;
+    }
+
+ 
 }
