@@ -13,11 +13,11 @@ const about = {
         ${this.projects.map(project => {
             return `
             <div class="project-container" onclick="void(0)">
-                <div class"project-content">
+                <div class="project-content">
                     <div class="project-image-container">
                         <img src="${project.image}" class="project-image" title="${project.title}" />
                         <div class="overlay">
-                            <div clas="year-overlay">
+                            <div class="year-overlay">
                             <p>${project.year}</p>
                             </div>
                             <div class="external-links-overlay">
@@ -32,7 +32,7 @@ const about = {
                 </div>
             </div>
             `
-        })
+        }).join('')
         }
         `
     }
