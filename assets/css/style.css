@@ -89,7 +89,21 @@ div.project-container {
     position: absolute;
     bottom: 9%;
     right: 6%;
-    color: var(--liquid-white);
+    color: #efefef;
+}
+
+.external-links-overlay p a {
+    border-radius: 15px;
+    padding: 6px 12px;
+    background-color: teal;
+    color: #efefef;
+    text-decoration: none;
+    border: 1px solid transparent;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .project-container:hover .overlay {

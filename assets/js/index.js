@@ -16,6 +16,18 @@ const about = {
                 <div class"project-content">
                     <div class="project-image-container">
                         <img src="${project.image}" class="project-image" title="${project.title}" />
+                        <div class="overlay">
+                            <div clas="year-overlay">
+                            <p>${project.year}</p>
+                            </div>
+                            <div class="external-links-overlay">
+                            <p><a href="${project.github}" target="_blank">Github</a>
+                                ${project.deployed && ` <a href="${project.deployed}" target="_blank">Live</a>`}
+                            </p>
+                            </div>
+                            <p class="project-title">${project.title}</p>
+                            <p class="project-summary">${project.summary}</p>
+                        </div>
                     </div>
                 </div>
             </div>
