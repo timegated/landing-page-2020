@@ -95,13 +95,6 @@ div.typed-intro {
     flex-direction: row-reverse;
 }
 
-/* .project {
-    flex-grow: 1;
-    background: #2c2c2c;
-    border: 1px solid lightblue;
-    box-shadow: 5px 5px black;
-} */
-
 .project-text {
     flex-basis: 70%;
     color: #000;
