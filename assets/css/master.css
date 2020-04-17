@@ -107,12 +107,11 @@ div.typed-intro {
     color: #000;
     font-family: 'Montserrat', sans-serif;
     margin-left: .5rem;
-    background: lightblue;
 }
 
 .project-text>p {
     padding: 10px;
-    color: #000;
+    color: #efefef;
     font-weight: bold;
 }
 
