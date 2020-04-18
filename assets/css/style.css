@@ -1,0 +1,380 @@
+@import url('./reset.css');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Prata&display=swap");
+
+
+/* html/body */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Prata', serif;
+    background: #2c2c2c;
+}
+
+/*Flex-Wrapper*/
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container Styles */
+
+/* Main Container */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* About Container */
+.container-about {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-about>p {
+    color: #efefef;
+    margin-left: 2rem;
+    flex: 0 0 35%;
+    margin-top: 4rem;
+}
+
+div.intro-container {
+    margin-top: 12rem;
+    height: 30vh;
+    background: #2c2c2c;
+}
+
+div.typed-intro {
+    max-width: 1200px;
+    margin: 5rem auto;
+    width: 50%;
+}
+
+/* Projects Container */
+div.project-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.project-image-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.project-content {
+    margin: 0 6px 0 6px;
+}
+.project-container:hover .project-image {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale (1.2);
+    transform: scale(1.2);
+}
+
+.external-links-overlay {
+    position: absolute;
+    bottom: 9%;
+    right: 6%;
+    color: #efefef;
+}
+
+.external-links-overlay p a {
+    border-radius: 15px;
+    padding: 6px 12px;
+    background-color: lightblue;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid transparent;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.project-container:hover .overlay {
+    opacity: 1;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    -webkit-transition: transform 0.8s ease;
+    -moz-transition: transform 0.8s ease;
+    -o-transition: transform 0.8s ease;
+    -ms-transition: transform 0.8s ease;
+    transition: transform 0.8s ease;
+}
+
+.overlay {
+    background: #2c2c2c;
+    color: #efefef;
+    position: absolute;
+    opacity: 0;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: opacity 0.8s ease;
+    -moz-transition: opacity 0.8s ease;
+    -o-transition: opacity 0.8s ease;
+    -ms-transition: opacity 0.8s ease;
+    transition: opacity 0.8s ease;
+}
+
+.year-overlay {
+    position: absolute;
+    bottom: 7%;
+    left: 6%;
+    padding: 0 6px;
+    border-bottom: 1px solid #efefef;
+    color: #efefef;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.project-title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 2%;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Projects Grid */
+.grid-400 {
+    max-width: 1200px;
+    margin-top: 12rem;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+}
+
+.navbar>ul {
+    position: fixed;
+    top: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.navbar>ul>li {
+    background: black;
+    padding: 10px;
+}
+
+.navbar>ul>li:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.navbar>ul>li:last-child {
+    margin-left: 1rem;
+}
+
+.navbar>ul>li>a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #efefef;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.navbar>ul>li>a:hover {
+    cursor: pointer;
+    border: 1px dashed #e86b43fa;
+}
+
+/* Text Styling */
+.big-text {
+    font-size: 42px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-text {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.courier-new {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.js-const-color {
+    color: #3F51B5;
+}
+
+.js-var-color {
+    color: #759eead6;
+}
+
+.js-string-color {
+    color: #e86b43fa;
+}
+
+/* Intro */
+
+.blinky {
+    border-left: .3px solid black;
+    height: 30px;
+    animation: 1s blink step-end infinite;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background: darkgray;
+    height: 100px;
+}
+
+/* Cursor */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background: #ccc;
+    margin-left: .1rem;
+    animation: blink 1s infinite;
+}
+
+.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background: #ccc;
+    }
+
+    49% {
+        background: #ccc;
+    }
+
+    50% {
+        background: transparent;
+    }
+
+    99% {
+        background: transparent;
+    }
+
+    100% {
+        background: #ccc;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-projects {
+        margin: 0;
+    }
+
+    .project-row {
+        margin: 1rem 0 0 0;
+    }
+
+    .container-about {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 12rem;
+
+    }
+
+    .project {
+        flex-grow: 1;
+        margin-left: 5px;
+        background: #2c2c2c;
+        border: 1px solid lightblue;
+        box-shadow: 5px 5px black;
+    }
+
+    .container-about>p {
+        margin: 0 auto;
+        width: 75%;
+        font-size: 12px;
+    }
+
+
+    .p-text {
+        font-size: 18px;
+
+    }
+
+    div.intro-container {
+        width: 100%;
+        margin: 5px 5px 5px auto;
+        height: 30vh;
+    }
+
+    div.typed-intro {
+        width: 85%;
+        margin: 1rem auto;
+    }
+
+    .navbar>ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        visibility: hidden;
+    }
+
+    .project-text {
+        font-size: 10px;
+    }
+}

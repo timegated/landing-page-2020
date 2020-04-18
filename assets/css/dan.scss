@@ -61,7 +61,7 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
     display: block;
     width: calc(18 * #{$size});
     height: calc(18 * #{$size});
-    margin: 1rem;
+    margin: auto;
 
 
     &::after {
@@ -72,4 +72,23 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
         box-shadow:
             pixelize($dan, $size);
     }
+}
+
+@media all and (max-width: 700px) {
+    #dan {
+        display:block;
+        width: calc(18 * 5px);
+        height: calc(18 * 5px);
+        margin: auto;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 5px;
+            height: 5px;
+            box-shadow:
+                pixelize($dan, 5px)
+        }
+    }
+    
 }
