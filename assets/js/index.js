@@ -82,7 +82,7 @@ const init = () => {
 }
 
 const xhr = new XMLHttpRequest();
-xhr.open('GET', '/data.json');
+xhr.open('GET', 'https://timegated.github.io/data.json');
 xhr.onload = () => {
     if (xhr.status === 200) {
         try {
