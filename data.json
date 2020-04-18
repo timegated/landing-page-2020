@@ -17,11 +17,11 @@
             "year": 2019
         },
         {
-            "title": "Book Search",
-            "summary": "A mini-fullstack react application that searches for books",
-            "image": "assets/images/booksearchjpg.png",
-            "github": "https://github.com/timegated/react-books-search",
-            "deployed": "https://sleepy-bayou-19372.herokuapp.com/",
+            "title": "Event-Delecalculator",
+            "summary": "Calculator project showcasing event delegation",
+            "image": "assets/images/eventcalc.png",
+            "github": "https://github.com/timegated/event-delecalculator",
+            "deployed": "https://timegated.github.io/event-delecalculator/calc.html",
             "year": 2019
         },
         {
