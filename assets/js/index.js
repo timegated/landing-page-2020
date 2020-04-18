@@ -12,6 +12,7 @@ const container = {
         typedIntroElement: document.getElementById('typedIntro')
     },
     generateProjects() {
+        console.log(this.projects)
         this.targets.projectElement.innerHTML = `
         ${this.projects.map(project => {
             return `
@@ -81,20 +82,16 @@ const init = () => {
     container.generateProjects();
 }
 
-const xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://timegated.github.io/data.json');
-xhr.onload = () => {
-    if (xhr.status === 200) {
-        try {
-            const resObj = JSON.parse(xhr.responseText);
-            container.projects = resObj.projects;
-            console.log('Projects Loaded');
-            typeEffectOnScreen();
-            init()
-        }
-        catch {
-            console.error('Something went wrong', container.projects);
-        }
-    };
-}
-xhr.send()
+const fetchProjects = (url) => {
+    return fetch(url).then(function (res) {
+        return res.json()
+    }).then(function (json) {
+        return json;
+    })
+};
+fetchProjects('/data.json').then(function (result) {
+    container.projects = result.projects;
+    typeEffectOnScreen();
+    init();
+});
+
