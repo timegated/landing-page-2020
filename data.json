@@ -17,6 +17,14 @@
             "year": 2019
         },
         {
+            "title": "Book Search",
+            "summary": "A mini-fullstack react application that searches for books",
+            "image": "assets/images/booksearchjpg.png",
+            "github": "https://github.com/timegated/react-books-search",
+            "deployed": "https://sleepy-bayou-19372.herokuapp.com/",
+            "year": 2019
+        },
+        {
             "title": "Shopping List",
             "summary": "Learning tool for fullstack applications built with react and mongodb",
             "image": "assets/images/shlistjpg.png",

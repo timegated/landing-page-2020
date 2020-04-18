@@ -25,10 +25,10 @@
     @return $result;
 }
 
-$size: 15px;
+$size: 10px;
 
-$t: #2c2c2c;
-$b: #000;
+$t: #000;
+$b: #2c2c2c;
 $eye: #4d1b09;
 $hair: #211a23;
 $s: #f8ece7;
@@ -59,9 +59,9 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
 
 #dan {
     display: block;
-    width: calc(18 * #{$size});
-    height: calc(18 * #{$size});
-    margin: auto;
+    width: calc(22 * #{$size});
+    height: calc(22 * #{$size});
+    margin: 5rem auto;
 
 
     &::after {
