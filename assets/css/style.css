@@ -31,7 +31,7 @@ body {
 /* Main Container */
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1440px;
 }
 
 /* About Container */
@@ -111,7 +111,7 @@ div.project-container {
 .project-image {
     display: block;
     width: 100%;
-    height: 350px;
+    height: 100%;
     -webkit-transition: transform 0.8s ease;
     -moz-transition: transform 0.8s ease;
     -o-transition: transform 0.8s ease;
@@ -181,7 +181,6 @@ div.project-container {
 .navbar {
     background: #000;
     position: fixed;
-    width: 250px;
     height: 100%;
     z-index: 1000;
 }
@@ -210,7 +209,7 @@ div.project-container {
 
 .navbar>ul>li>a:hover {
     cursor: pointer;
-    border: 1px dashed #e86b43fa;
+    border-bottom: 1px solid lightblue;
 }
 
 /* Text Styling */
