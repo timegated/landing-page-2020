@@ -9,7 +9,9 @@ const container = {
     projects: [],
     targets: {
         projectElement: document.getElementById('projects'),
-        typedIntroElement: document.getElementById('typedIntro')
+        typedIntroElement: document.getElementById('typedIntro'),
+        navBar: document.querySelector('.navbar'),
+        sideBarButton: document.querySelector('#button'),
     },
     generateProjects() {
         console.log(this.projects)
@@ -89,6 +91,16 @@ const fetchProjects = (url) => {
         return json;
     })
 };
+
+const toggleSideBar = (e) => {
+    const { targets } = container;
+    targets.navBar.classList.toggle('move-to-right')
+};
+
+const sideBarButton = container.targets.sideBarButton;
+
+sideBarButton.addEventListener('click', toggleSideBar)
+
 fetchProjects('/data.json').then(function (result) {
     container.projects = result.projects;
     typeEffectOnScreen();

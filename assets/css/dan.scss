@@ -79,17 +79,19 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
 @media all and (max-width: 700px) {
     #dan {
         display:block;
-        width: calc(18 * 5px);
-        height: calc(18 * 5px);
-        margin: auto;
+        // width: calc(30 * 5px);
+        height: calc(30 * 5px);
+        margin-top: 5rem;
+        margin-left: 1rem;
 
         &::after {
             content: '';
             display: block;
-            width: 5px;
-            height: 5px;
+            width: 8px;
+            height: 8px;
+            margin-left: 1rem;
             box-shadow:
-                pixelize($dan, 5px)
+                pixelize($dan, 8px)
         }
     }
     
