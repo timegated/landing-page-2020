@@ -89,7 +89,7 @@ const fetchProjects = (url) => {
         return json;
     })
 };
-fetchProjects('/data.json').then(function (result) {
+fetchProjects('https://timegated.github.io/landing-page-2020/data.json').then(function (result) {
     container.projects = result.projects;
     typeEffectOnScreen();
     init();
