@@ -3,9 +3,6 @@ const container = {
     lastName: 'Beccaria',
     area: 'Philadelphia, PA',
     interests: ['javascript', 'reactjs', 'nodejs'],
-    navItems: ['<a href="#about" class="nav-button">About</a>',
-        '<a href="#projects" class="nav-button">Projects</a>',
-        '<a href="assets/resume/DJBResume March 2020.pdf" target="_blank" class="nav-button">Resume</a>'],
     projects: [],
     targets: {
         projectElement: document.getElementById('projects'),
@@ -44,15 +41,30 @@ const container = {
     }
 };
 
-
 let i = 0;
-
-
-
 let isTag;
 const { firstName, lastName, job, area, interests, navItems } = container;
 let message = `<pre class="p-text courier-new m-top-2 js-string-color"><span class="js-const-color">const</span> <span class="js-var-color">person</span> = {<br>      <span class="js-var-color">firstName:</span> '${firstName}',<br>      <span class="js-var-color">lastName:</span> '${lastName}',<br>      <span class="js-var-color">area:</span> '${area}'<br>};</pre>`;
 
+const init = () => {
+    container.generateProjects();
+}
+
+const fetchProjects = (url) => {
+    return fetch(url).then(function (res) {
+        return res.json()
+    }).then(function (json) {
+        return json;
+    })
+};
+
+const toggleSideBar = (e) => {
+    const {
+        targets
+    } = container;
+    targets.navBar.classList.toggle('move-to-right');
+    targets.navBar.style.display = 'block';
+};
 
 const typeEffectOnScreen = () => {
     const character = message.slice(0, i += 1);
@@ -76,27 +88,6 @@ const typeEffectOnScreen = () => {
     container.targets.typedIntroElement.innerHTML = `${character}<span class="cursor">&nbsp;</span>`;
 }
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     setTimeout(typeEffectOnScreen, 100)
-// })
-
-const init = () => {
-    container.generateProjects();
-}
-
-const fetchProjects = (url) => {
-    return fetch(url).then(function (res) {
-        return res.json()
-    }).then(function (json) {
-        return json;
-    })
-};
-
-const toggleSideBar = (e) => {
-    const { targets } = container;
-    targets.navBar.classList.toggle('move-to-right')
-};
-
 const sideBarButton = container.targets.sideBarButton;
 
 sideBarButton.addEventListener('click', toggleSideBar)
@@ -106,4 +97,3 @@ fetchProjects('/data.json').then(function (result) {
     typeEffectOnScreen();
     init();
 });
-

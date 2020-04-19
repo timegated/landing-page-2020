@@ -27,7 +27,7 @@
 
 $size: 8px;
 
-$t: #000;
+$t: #3e444f;
 $b: #2c2c2c;
 $eye: #4d1b09;
 $hair: #211a23;
@@ -81,17 +81,17 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
         display:block;
         // width: calc(30 * 5px);
         height: calc(30 * 5px);
-        margin-top: 5rem;
-        margin-left: 1rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
 
         &::after {
             content: '';
             display: block;
             width: 8px;
             height: 8px;
-            margin-left: 1rem;
+            margin-left: 2rem;
             box-shadow:
-                pixelize($dan, 8px)
+                pixelize($dan, 5px)
         }
     }
     
