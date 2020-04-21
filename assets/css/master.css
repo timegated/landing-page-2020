@@ -1,0 +1,153 @@
+@import url('./reset.css');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Prata&display=swap");
+@import url('./about.css');
+@import url('./projects.css');
+@import url('./navbar.css');
+@import url('./danmq.css');
+@import url('./media-queries.css');
+
+/* html/body */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Prata', serif;
+    background: #efefef;
+}
+
+/*Flex-Wrapper*/
+
+.content-wrapper {
+    display: flex;
+}
+
+/* Container Styles */
+
+/* Main Container */
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Text Styling */
+.big-text {
+    font-size: 12rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-text {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.courier-new {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.js-const-color {
+    color: #248ee3;
+}
+
+.js-var-color {
+    color: #3e444f;
+}
+
+.js-string-color {
+    color: #248ee3;
+}
+
+/* Intro */
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background: darkgray;
+    height: 100px;
+}
+
+/* Cursor */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background: #3e444fd6;
+    margin-left: .1rem;
+    animation: blink 1s infinite;
+}
+
+.cursor.typing {
+    animation: none;
+}
+
+/* Flexbox */
+.flex-projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+}
+
+
+@keyframes blink {
+    0% {
+        background: transparent;
+    }
+
+    49% {
+        background: transparent;
+    }
+
+    50% {
+        background: #3e444fd6;
+    }
+
+    99% {
+        background: #3e444fd6;
+    }
+
+    100% {
+        background: #3e444fd6;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: black;
+    }
+}

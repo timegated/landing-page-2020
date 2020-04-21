@@ -1,0 +1,23 @@
+/* About Container */
+.container-about {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-about>p {
+    color: #efefef;
+    margin-left: 2rem;
+    flex: 0 0 35%;
+    margin-top: 4rem;
+}
+
+div.intro-container {
+    height: 30vh;
+    background: #efefef;
+}
+
+div.typed-intro {
+    max-width: 1200px;
+    margin: 5rem auto;
+    width: 50%;
+}
