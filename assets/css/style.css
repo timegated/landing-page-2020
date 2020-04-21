@@ -173,22 +173,12 @@ div.project-container {
     margin-bottom: 12rem;
 }
 
-/* Projects Grid */
-.grid-400 {
-    max-width: 1200px;
-    margin-top: 12rem;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-
-}
-
 /* Navbar */
 .navbar {
     background: #3e444f;
     position: fixed;
     height: 100%;
-    z-index: 1000;
+    z-index: 1;
     /* transitions */
     -webkit-transition: transform 0.6s ease-in-out;
     -moz-transition: transform 0.6s ease-in-out;
