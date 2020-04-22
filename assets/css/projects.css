@@ -16,7 +16,10 @@ div.project-container {
 .project-content {
     margin: 6px;
 }
-
+.projects-title {
+    color: #3e444f;
+    display: block;
+}
 .project-container:hover .project-image {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);

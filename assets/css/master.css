@@ -34,10 +34,17 @@ body {
 /* Main Container */
 .container {
     margin: 0 auto;
-    max-width: 1440px;
-    display: flex;
-    flex-direction: column;
+    max-width: 1200px;
 }
+
+/* Flexbox */
+.flex-projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+}
+
 
 /* Text Styling */
 .big-text {
@@ -98,13 +105,6 @@ body {
     animation: none;
 }
 
-/* Flexbox */
-.flex-projects {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 12rem;
-    margin-bottom: 12rem;
-}
 
 
 @keyframes blink {
