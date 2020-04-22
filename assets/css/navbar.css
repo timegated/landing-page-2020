@@ -50,7 +50,7 @@
 .main-menu>ul>li>a {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: #248ee3;
+    color: #efefef;
     text-decoration: none;
     padding: 10px;
     font-size: 24px;
@@ -58,7 +58,7 @@
 
 .main-menu>ul>li>a>i {
     font-size: 36px;
-    color: #248ee3;
+    color: #efefef;
 }
 
 .main-menu>ul>li>a:hover {
@@ -85,7 +85,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-    color: #248ee3;
+    color: lightblue;
 }
 
 

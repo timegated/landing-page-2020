@@ -61,6 +61,8 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
     display: block;
     width: calc(25 * #{$size});
     height: calc(25 * #{$size});
+    margin-top: 5rem;
+    margin-left: 1rem;
 
 
     &::after {
@@ -68,6 +70,7 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
         display: block;
         width: $size;
         height: $size;
+        margin-left: 1rem;
         box-shadow:
             pixelize($dan, $size);
     }
