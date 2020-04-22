@@ -90,7 +90,7 @@ const typeEffectOnScreen = () => {
 
 const sideBarButton = container.targets.sideBarButton;
 
-sideBarButton.addEventListener('click', toggleSideBar)
+// sideBarButton.addEventListener('click', toggleSideBar)
 
 fetchProjects('/data.json').then(function (result) {
     container.projects = result.projects;
