@@ -35,16 +35,8 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1200px;
+    min-width: 320px;
 }
-
-/* Flexbox */
-.flex-projects {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 12rem;
-    margin-bottom: 12rem;
-}
-
 
 /* Text Styling */
 .big-text {

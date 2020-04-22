@@ -1,23 +1,25 @@
 /* About Container */
-.container-about {
+.intro-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
-.container-about>p {
-    color: #efefef;
-    margin-left: 2rem;
-    flex: 0 0 35%;
-    margin-top: 4rem;
+.typed-intro>pre {
+    flex: 1 0 50%;
+    font-size: 1rem;
 }
 
 div.intro-container {
-    height: 30vh;
+    height: 20vh;
     background: #efefef;
 }
-
-div.typed-intro {
-    max-width: 1200px;
-    margin: 5rem auto;
-    width: 50%;
+@media screen and (min-width:800px) {
+    .typed-intro>pre {
+        font-size: 3rem;
+    }
+    div.intro-container {
+        height: 50vh;
+    }
 }
