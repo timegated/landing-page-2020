@@ -10,6 +10,7 @@ div.project-container {
     overflow: hidden;
     position: relative;
     width: 100%;
+    box-shadow: 5px 5px 5px #2c2c2c;
 }
 
 .project-content {

@@ -3,7 +3,7 @@
 @import url('./about.css');
 @import url('./projects.css');
 @import url('./navbar.css');
-@import url('./danmq.css');
+@import url('./selfpixel.css');
 @import url('./media-queries.css');
 
 /* html/body */
@@ -36,6 +36,8 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1440px;
+    display: flex;
+    flex-direction: column;
 }
 
 

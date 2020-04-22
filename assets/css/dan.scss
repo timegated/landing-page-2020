@@ -57,7 +57,7 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
     ($t, $t, $t, $t, $t, $t, $t, $s, $s, $s, $s, $s, $t, $t, $t, $t, $t, $t, $t, $t, $t, $t, $t));
 
 
-#dan {
+.sp-pixel {
     display: block;
     width: calc(25 * #{$size});
     height: calc(25 * #{$size});
@@ -77,7 +77,7 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
 }
 
 @media all and (max-width: 700px) {
-    #dan {
+    .sp-pixel {
         display:block;
         // width: calc(30 * 5px);
         height: calc(30 * 5px);
