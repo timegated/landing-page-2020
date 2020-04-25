@@ -92,7 +92,7 @@ const sideBarButton = container.targets.sideBarButton;
 
 // sideBarButton.addEventListener('click', toggleSideBar)
 
-fetchProjects('http://raw.githubusercontent.com/timegated/landing-page-2020/master/data.json').then(function (result) {
+fetchProjects('https://raw.githubusercontent.com/timegated/landing-page-2020/master/data.json').then(function (result) {
     container.projects = result.projects;
     typeEffectOnScreen();
     init();
