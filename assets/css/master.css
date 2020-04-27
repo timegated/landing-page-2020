@@ -1,5 +1,6 @@
 @import url('./reset.css');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Prata&display=swap");
+@import url('./intro.css');
 @import url('./about.css');
 @import url('./projects.css');
 @import url('./navbar.css');
@@ -80,8 +81,9 @@ body {
 
 .footer {
     width: 100%;
-    background: darkgray;
+    background: #2c2c2c;
     height: 100px;
+    margin-top: 2rem;
 }
 
 /* Cursor */

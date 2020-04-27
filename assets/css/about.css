@@ -1,34 +1,12 @@
-/* About Container */
-.intro-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 2rem;
+.about-container {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
 }
 
-.typed-intro>pre {
-    flex: 1 0 50%;
-    font-size: 100%;
-}
-
-div.intro-container {
-    height: 20vh;
-    background: #efefef;
-}
-
-@media screen and (min-width: 700px) {
-    .typed-intro>pre {
+@media screen and (min-width: 800px) {
+    .about-container {
         font-size: 2rem;
-    }
-     div.intro-container {
-         height: 30vh;
-     }
-}
-@media screen and (min-width:800px) {
-    .typed-intro>pre {
-        font-size: 3rem;
-    }
-    div.intro-container {
-        height: 50vh;
     }
 }

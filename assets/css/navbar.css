@@ -101,7 +101,7 @@
     .main-menu>ul {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-evenly;
         width: auto;
         padding: 0;
         background: none;
