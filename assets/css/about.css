@@ -8,12 +8,21 @@
 
 .typed-intro>pre {
     flex: 1 0 50%;
-    font-size: 1rem;
+    font-size: 100%;
 }
 
 div.intro-container {
     height: 20vh;
     background: #efefef;
+}
+
+@media screen and (min-width: 700px) {
+    .typed-intro>pre {
+        font-size: 2rem;
+    }
+     div.intro-container {
+         height: 30vh;
+     }
 }
 @media screen and (min-width:800px) {
     .typed-intro>pre {

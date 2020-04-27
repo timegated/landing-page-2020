@@ -22,11 +22,12 @@ div.project-container {
 }
 
 .project-content {
-    margin: 6px;
+    margin: 2rem;
 }
 .projects-title {
     color: #3e444f;
-    display: block;
+    /* font-size: 2rem; */
+    text-align: center;
 }
 .project-container:hover .project-image {
     -webkit-transform: scale(1.2);
@@ -102,12 +103,18 @@ div.project-container {
 
 .project-title {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 2rem;
     margin-top: 2%;
 }
+
 @media screen and (min-width:800px) {
     .flex-projects {
         flex-wrap: wrap;
         flex-direction: row;
     }
+    .projects-title {
+        color: #3e444f;
+        font-size: 3rem;
+    }
+
 }

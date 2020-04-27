@@ -30,7 +30,7 @@
     width: 100%;
     height: 100%;
     z-index: 998;
-    background: #248ee3;
+    background: darkgray;
     opacity: .85;
     cursor: default;
 }
@@ -101,12 +101,15 @@
     .main-menu>ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-end;
         width: auto;
         padding: 0;
         background: none;
         overflow: hidden;
         text-align: center;
+    }
+    .main-menu>ul:first-child {
+        justify-content: flex-start;
     }
    .main-menu>ul>li {
        margin: 0;

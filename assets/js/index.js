@@ -11,7 +11,6 @@ const container = {
         sideBarButton: document.querySelector('#button'),
     },
     generateProjects() {
-        console.log(this.projects)
         this.targets.projectElement.innerHTML = `
         ${this.projects.map(project => {
             return `
@@ -89,8 +88,6 @@ const typeEffectOnScreen = () => {
 }
 
 const sideBarButton = container.targets.sideBarButton;
-
-// sideBarButton.addEventListener('click', toggleSideBar)
 
 fetchProjects('https://raw.githubusercontent.com/timegated/landing-page-2020/master/data.json').then(function (result) {
     container.projects = result.projects;
