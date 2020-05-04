@@ -7,4 +7,10 @@
 * [X] Make sure media queries are working correctly
 * [X] Clean up CSS file
 * [X] Look into different color scheme
-* [] Check how project images scale on different screen widths
+* [X] Check how project images scale on different screen widths
+
+## TODO
+
+* [] Figure out why blink animation is not working with the typed intro
+* [] Position logo on the other side of the navbar
+* [] Add a blog section
