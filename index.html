@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/master.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/selfpixel.css">
     <script src="assets/js/index.js" async></script>
     <title>DJB</title>
 </head>
 
 <body>
+    <!-- Navigation and Logo -->
     <header>
         <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
             <span class="sr-only"></span>
@@ -20,43 +22,49 @@
                 <span class="sr-only">Close main menu</span>
                 <span class="fa fa-close" aria-hidden="true"></span>
             </a>
+            <!-- Self Portrait -->
 
-
-            <ul>
-                <li>
+            <ul class="main-menu__items">
+                <li class="main-menu__item">
                     <div class="sp-pixel"></div>
                 </li>
-                <li><a href="https://www.linkedin.com/in/daniel-beccaria-29270293/" target="_blank"><i
-                            class="fab fa-linkedin"></i>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="https://www.linkedin.com/in/daniel-beccaria-29270293/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
                     </a></li>
-                <li><a href="https://github.com/timegated" target="_blank"><i class="fab fa-github"></i>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="https://github.com/timegated" target="_blank">
+                        <i class="fab fa-github"></i>
                     </a></li>
-                <li><a href="assets/resume/DJBResume March 2020.pdf" target="_blank">Resume</a></li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="assets/resume/DJBResume March 2020.pdf" target="_blank">Resume</a>
+                </li>
             </ul>
         </nav>
         <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
     </header>
-    <!-- <div class="content-wrapper"> -->
+    <!-- Main Content -->
     <div class="container">
         <!--Intro-->
-        <div id="intro-container" class="intro-container">
-            <div class="typed-intro" id="typedIntro">
+        <section id="intro-container" class="intro-container">
+            <div class="intro-container__typed" id="typedIntro">
             </div>
-        </div>
+        </section>
         <!--Projects-->
         <div class="projects-title">
             <h3>Projects</h3>
         </div>
-        <div id="projects" class="flex-projects">
+        <div id="projects" class="projects-flex">
 
         </div>
         <!--About Me-->
         <div class="about-container">
-            <p> Constantly learning what's new (while sticking with what works).always curious to try new tech, apply
+            <p> Staying up to date with current front-end technology while simultaneously sticking with what works. Always curious to try new tech, apply
                 different approaches, and work as part of a team. I consistently work towards creating applications that
-                user's find easy to use, helpful, and impactful.</p>
+                user's find easy to use and genuinely strive to write bug-free code that functions correctly.</p>
         </div>
     </div>
+    <!-- Footer -->
     <footer class="footer">
 
     </footer>

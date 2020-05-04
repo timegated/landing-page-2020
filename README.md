@@ -1,4 +1,4 @@
-## Landing page I made with simple html/css/js
+## Landing page made html/css/js
 
 ## Checklist
 * [X] Responsive navbar.

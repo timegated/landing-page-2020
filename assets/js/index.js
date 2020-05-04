@@ -14,8 +14,8 @@ const container = {
         this.targets.projectElement.innerHTML = `
         ${this.projects.map(project => {
             return `
-            <div class="project-container" onclick="void(0)">
-                <div class="project-content">
+            <div class="projects-container" onclick="void(0)">
+                <div class="projects-container__content">
                     <div class="project-image-container">
                         <img src="${project.image}" class="project-image" title="${project.title}" />
                         <div class="overlay">
@@ -43,7 +43,7 @@ const container = {
 let i = 0;
 let isTag;
 const { firstName, lastName, job, area, interests, navItems } = container;
-let message = `<pre class="p-text courier-new m-top-2 js-string-color"><span class="js-const-color">const</span> <span class="js-var-color">person</span> = {<br>      <span class="js-var-color">firstName:</span> '${firstName}',<br>      <span class="js-var-color">lastName:</span> '${lastName}',<br>      <span class="js-var-color">area:</span> '${area}'<br>};</pre>`;
+let message = `<pre class="intro-container__pre js-string-color montserrat"><span class="js-const-color">const</span> <span class="js-var-color">person</span> = {<br>      <span class="js-var-color">firstName:</span> '${firstName}',<br>      <span class="js-var-color">lastName:</span> '${lastName}',<br>      <span class="js-var-color">area:</span> '${area}'<br>};</pre>`;
 
 const init = () => {
     container.generateProjects();
