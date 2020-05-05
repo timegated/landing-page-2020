@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Prata&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Prata&display=swap);
 
 
 /* html/body */
@@ -28,11 +28,9 @@ body {
     min-width: 320px;
 }
 
-/* *************** */
 
 /* About Container */
 
-/* *************** */
 
 .about-container {
     font-family: 'Montserrat', sans-serif;
@@ -43,11 +41,9 @@ body {
     margin-bottom: 10rem;
 }
 
-/* *************** */
 
 /* Intro Container */
 
-/* *************** */
 
 .intro-container {
     display: flex;
@@ -67,11 +63,10 @@ body {
     line-height: 2rem;
 }
 
-/* *************** */
 /* Navigation - Mobile First */
 
 .main-menu {
-    background: #3e444f;
+    background: #efefef;
     position: fixed;
     height: 100%;
     z-index: 999;
@@ -121,7 +116,7 @@ body {
 .main-menu__link {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: #efefef;
+    color: #2c2c2c;
     text-decoration: none;
     padding: 10px;
     font-size: 24px;
@@ -129,12 +124,12 @@ body {
 
 .main-menu>ul>li>a>i {
     font-size: 36px;
-    color: #efefef;
+    color: #2c2c2c;
 }
 
 .main-menu>ul>li>a:hover {
     cursor: pointer;
-    border-bottom: 1px solid lightblue;
+    border-bottom: 1px solid #2c2c2c;
 }
 
 .sr-only {
@@ -160,7 +155,6 @@ body {
 }
 
 /* Projects Container */
-/* *************** */
 
 .projects-flex {
     display: flex;
@@ -271,7 +265,6 @@ body {
     margin-top: 2%;
 }
 
-/* *************** */
 /* Text Styling */
 
 .big-text {
@@ -305,7 +298,7 @@ body {
 
 .footer {
     width: 100%;
-    background: #3e444f;
+    background: #efefef;
     height: 100px;
     margin-top: 2rem;
 }
@@ -314,27 +307,84 @@ body {
 .cursor {
     display: inline-block;
     width: 3px;
+    color: #3e444fd6;
     background: #3e444fd6;
     margin-left: .1rem;
-    /* animation: blink 1s infinite; */
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
 }
 
-.cursor.typing {
+.typing {
+    display: inline-block;
+    width: 3px;
+    color: #3e444fd6;
+    background: #3e444fd6;
+    margin-left: .1rem;
     animation: none;
 }
 
-/* 
 @keyframes blink {
 
     from,
     to {
-        color: #efefef;
+        background: transparent;
     }
 
-    100% {
-        color: black;
+    50% {
+        background: #3e444fd6;
     }
-} */
+}
+
+@-moz-keyframes blink {
+
+    from,
+    to {
+        background: transparent;
+    }
+
+    50% {
+        background: #3e444fd6;
+    }
+}
+
+@-webkit-keyframes blink {
+
+    from,
+    to {
+        background: transparent;
+    }
+
+    50% {
+        background: #3e444fd6;
+    }
+}
+
+@-ms-keyframes blink {
+
+    from,
+    to {
+        background: transparent;
+    }
+
+    50% {
+        background: #3e444fd6;
+    }
+}
+
+@-o-keyframes blink {
+
+    from,
+    to {
+        background: transparent;
+    }
+
+    50% {
+        background: #3e444fd6;
+    }
+}
 
 @keyframes fadeIn {
     0% {
@@ -370,23 +420,30 @@ body {
     }
 
     .main-menu {
-        position: static;
+        position: fixed;
+        left: 0px;
         display: block;
     }
 
     .main-menu__items {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        flex-direction: column;
         width: auto;
+        align-items: center;
         padding: 0;
         background: none;
         overflow: hidden;
         text-align: center;
     }
 
+    .main-menu__items:first-child {
+        position: fixed;
+        left: 30px;
+    }
+
     .main-menu__item {
-        margin: 0;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
     }
 
     .main-menu__link {

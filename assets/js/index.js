@@ -12,7 +12,7 @@ const container = {
     },
     generateProjects() {
         this.targets.projectElement.innerHTML = `
-        ${this.projects.map(project => {
+        ${this.projects.map(function(project) {
             return `
             <div class="projects-container" onclick="void(0)">
                 <div class="projects-container__content">
@@ -57,14 +57,6 @@ const fetchProjects = (url) => {
     })
 };
 
-const toggleSideBar = (e) => {
-    const {
-        targets
-    } = container;
-    targets.navBar.classList.toggle('move-to-right');
-    targets.navBar.style.display = 'block';
-};
-
 const typeEffectOnScreen = () => {
     const character = message.slice(0, i += 1);
     if (character === message) {
@@ -80,14 +72,13 @@ const typeEffectOnScreen = () => {
 
     if (currentCharacter === '.') {
         setTimeout(typeEffectOnScreen, 50)
+        container.targets.typedIntroElement.classList.add('typing')
     } else {
        setTimeout(typeEffectOnScreen, 50)
     }
 
     container.targets.typedIntroElement.innerHTML = `${character}<span class="cursor">&nbsp;</span>`;
 }
-
-const sideBarButton = container.targets.sideBarButton;
 
 fetchProjects('https://raw.githubusercontent.com/timegated/landing-page-2020/master/data.json').then(function (result) {
     container.projects = result.projects;
