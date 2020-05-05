@@ -25,9 +25,9 @@
     @return $result;
 }
 
-$size: 8px;
+$size: 5px;
 
-$t: #3e444f;
+$t: #efefef;
 $b: #2c2c2c;
 $eye: #4d1b09;
 $hair: #211a23;
@@ -82,7 +82,7 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
         width: calc(30 * 5px);
         height: calc(30 * 5px);
         margin-top: 2rem;
-        margin-left: 2rem;
+        margin-right: 1.5rem;
 
         &::after {
             content: '';
