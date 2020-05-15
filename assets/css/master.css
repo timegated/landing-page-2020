@@ -507,8 +507,10 @@ body {
     height: 15%;
     }
 
-    .main-menu__items:first-child {
-      
+    .main-menu__item:nth-child(1) {
+    position: fixed;
+    left: 0px;
+    top: -50px;
     }
 
     .main-menu__link {
