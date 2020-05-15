@@ -492,7 +492,7 @@ body {
     .main-menu__items {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: auto;
     align-items: center;
     padding: 0;
@@ -508,11 +508,7 @@ body {
     }
 
     .main-menu__items:first-child {
-        position: fixed;
-        left: 30px;
-    }
-
-    .main-menu__item {
+      
     }
 
     .main-menu__link {
