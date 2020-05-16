@@ -396,7 +396,7 @@ body {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
     .about-container {
         font-size: 2rem;
         margin-top: 20rem;
@@ -442,7 +442,7 @@ body {
     .main-menu__item {
         /*  margin-top: 2rem; */
         margin-bottom: 4rem; 
-    }
+     }
 
     .main-menu__link {
         font-size: 2rem;
@@ -492,26 +492,20 @@ body {
     .main-menu__items {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: auto;
     align-items: center;
     padding: 0;
     background: none;
     overflow: hidden;
     text-align: center;
-    /* position: static; */
     position: fixed;
     top: 0px;
-    background: gray;
+    background: #248ee3;
     width: 100%;
     height: 15%;
     }
 
-    .main-menu__item:nth-child(1) {
-    position: fixed;
-    left: 0px;
-    top: -50px;
-    }
 
     .main-menu__link {
         font-size: 2rem;
