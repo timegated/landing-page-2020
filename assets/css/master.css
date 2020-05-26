@@ -167,8 +167,24 @@ body {
     font-size: 1rem;
     text-align: center;
     margin-top: 5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 2px solid #3e444f;
+    box-shadow: 1px 1px 1px 1px #3e444f;
 }
-
+.about-title {
+    color: #3e444f;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'Prata', serif;
+    border: 2px solid #3e444f;
+    box-shadow: 1px 1px 1px 1px #3e444f;
+}
 /* Contained in index.js */
 .projects-container {
     display: block;
@@ -492,7 +508,7 @@ body {
     .main-menu__items {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: auto;
     align-items: center;
     padding: 0;
@@ -523,5 +539,10 @@ body {
     .projects-title {
         color: #3e444f;
         font-size: 3rem;
+    }
+    .about-title {
+        color: #3e444f;
+        font-size: 3rem;
+        font-family: 'Prata', serif;
     }
 }
