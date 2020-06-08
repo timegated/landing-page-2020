@@ -22,7 +22,7 @@ body {
 /* Container Styles */
 
 /* Main Container */
-.container {
+main {
     margin: 0 auto;
     max-width: 1200px;
     min-width: 320px;
@@ -51,7 +51,6 @@ body {
     justify-content: center;
     margin-top: 10rem;
     height: 20vh;
-    background: #efefef;
 }
 
 .intro_container__typed {
