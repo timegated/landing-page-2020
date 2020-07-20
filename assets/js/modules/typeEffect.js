@@ -1,6 +1,5 @@
 import container from './container.js';
 
-
 const { firstName, lastName, area } = container;
 
 let i = 0;

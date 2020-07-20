@@ -1,11 +1,11 @@
 {
     "projects": [
         {
-            "title": "Word Games",
-            "summary": "A collection of word games created with html/js/css",
-            "image": "assets/images/wordgamesjpg.png",
-            "github": "https://github.com/timegated/word-game",
-            "deployed": "https://timegated.github.io/word-game/",
+            "title": "WoW Class Tracker",
+            "summary": "App designed to help players keep track of their items",
+            "image": "assets/images/classtracker.PNG",
+            "github": "https://github.com/timegated/class-tracker",
+            "deployed": "https://wowclasstracker.herokuapp.com/",
             "year": 2020
         },
         {
