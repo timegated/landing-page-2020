@@ -422,11 +422,11 @@ main {
 
     .about-title {
         color: #efefef;
-        background: #3e444f;
+        background: #001A1A;
         font-size: 3rem;
         font-family: 'Prata', serif;
         flex: 1 0 30%;
-        box-shadow: 3px 3px 3px 3px #3e444f;
+        box-shadow: 2px 2px 2px 2px #001A1A;
     }
     .about-container p {
         margin: 1rem;
@@ -489,12 +489,14 @@ main {
         flex-direction: row;
     }
     .projects-container {
-        flex: 1 0 25%;
+        flex: 1 0 45%;
+        max-width: 45%;
+        margin: auto;
     }
     .projects-title {
         color: #efefef;
         font-size: 3rem;
-        background: #3e444f;
-        box-shadow: 3px 3px 3px 3px #3e444f;
+        background: #001A1A;
+        box-shadow: 2px 2px 2px 2px #001A1A;
     }
 }
