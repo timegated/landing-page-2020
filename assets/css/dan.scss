@@ -59,8 +59,8 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
 
 .sp-pixel {
     display: block;
-    width: calc(25 * #{$size});
-    height: calc(25 * #{$size});
+    width: calc(20 * #{$size});
+    height: calc(20 * #{$size});
     margin-top: 5rem;
     margin-left: 1rem;
 
@@ -79,8 +79,8 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
 @media all and (min-width: 800px) {
     .sp-pixel {
         display: block;
-        width: calc(30 * 5px);
-        height: calc(30 * 5px);
+        width: calc(20 * 5px);
+        height: calc(20 * 5px);
         margin-top: 2rem;
         margin-right: 1.5rem;
 
