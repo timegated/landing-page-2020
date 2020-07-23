@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Capriola&family=Prompt:wght@900&display=swap');
 
 
+/* Mobile Styles */
 
 /* html/body */
 html, body {
@@ -21,38 +22,32 @@ html, body {
 
 /* Container Styles */
 
-/* Main Container */
-.animation-area {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: transparent;
-}
+/* Main Container Mobile */
 
-/* About Container */
+
+/* About Container Mobile */
 
 .about-container {
     font-family: 'Capriola', sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: .8rem;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 0.1rem;
+    color: #efefef;
 }
 
 
-/* Intro Container */
+/* Intro Container Mobile */
 
 
 .intro-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 20rem;
+    margin-top: 5rem;
     margin-bottom: 10rem;
-    /* height: 20vh; */
-    /* background: #001A1A; */
     box-shadow: 3px 3px 3px 3px #001A1A;
 }
 
@@ -69,7 +64,7 @@ html, body {
 /* Navigation - Mobile First */
 
 .main-menu {
-    background: transparent;
+    background: #248EE3;
     position: fixed;
     height: 100%;
     z-index: 999;
@@ -106,7 +101,7 @@ html, body {
 
 
 .main-menu a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Prompt', sans-serif;
     font-weight: bold;
     color: #2c2c2c;
     text-decoration: none;
@@ -115,7 +110,7 @@ html, body {
 }
 
 .main-menu a>i {
-    font-size: 36px;
+    font-size: 2rem;
     padding: 1rem;
     color: #2c2c2c;
 }
@@ -148,7 +143,7 @@ html, body {
     color: lightblue;
 }
 
-/* Projects Container */
+/* Projects Container Mobile */
 
 .projects-flex {
     display: flex;
@@ -157,17 +152,17 @@ html, body {
 }
 
 .projects-title {
-    color: #3e444f;
+    color: #efefef;
     font-family: 'Prompt', sans-serif;
     font-size: 1rem;
     text-align: center;
     max-width: 50%;
-    margin: 5rem auto;
+    margin: 2rem auto;
     border: 2px solid #3e444f;
     box-shadow: 1px 1px 1px 1px #3e444f;
 }
 .about-title {
-    color: #3e444f;
+    color: #efefef;
     font-family: 'Prompt', sans-serif;
     font-size: 1rem;
     text-align: center;
@@ -176,7 +171,9 @@ html, body {
     border: 2px solid #3e444f;
     box-shadow: 1px 1px 1px 1px #3e444f;
 }
-/* container.js styling */
+
+/* Projects Mobile */
+
 .projects-container {
     display: block;
     flex: 1 0 50%;
@@ -310,94 +307,26 @@ html, body {
 .footer {
     width: 100%;
     background: #efefef;
-    height: 100px;
     margin-top: 2rem;
     background: black;
 }
-
-/* Cursor */
-.cursor {
-    display: inline-block;
-    width: 3px;
-    color: #3e444fd6;
-    background: #3e444fd6;
-    margin-left: .1rem;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.typing {
-    display: inline-block;
-    width: 3px;
-    color: #3e444fd6;
-    background: #3e444fd6;
-    margin-left: .1rem;
-    animation: none;
+.footer-content li {
+    margin: 1rem;
 }
-
-@keyframes blink {
-
-    from,
-    to {
-        background: transparent;
-    }
-
-    50% {
-        background: #3e444fd6;
-    }
+.footer-content a:active {
+    color: #248EE3
 }
-
-@-moz-keyframes blink {
-
-    from,
-    to {
-        background: transparent;
-    }
-
-    50% {
-        background: #3e444fd6;
-    }
+.footer-content i {
+    font-size: 30px;
+    color: #248EE3;
 }
-
-@-webkit-keyframes blink {
-
-    from,
-    to {
-        background: transparent;
-    }
-
-    50% {
-        background: #3e444fd6;
-    }
-}
-
-@-ms-keyframes blink {
-
-    from,
-    to {
-        background: transparent;
-    }
-
-    50% {
-        background: #3e444fd6;
-    }
-}
-
-@-o-keyframes blink {
-
-    from,
-    to {
-        background: transparent;
-    }
-
-    50% {
-        background: #3e444fd6;
-    }
-}
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -408,6 +337,16 @@ html, body {
     }
 }
 
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+    .projects-flex {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Laptop */
 
 @media screen and (min-width:1024px) {
      .about-container {
@@ -432,6 +371,7 @@ html, body {
         text-align: left;
     }
     .intro-container {
+        margin-top: 10rem;
         height: 50vh;
     }
 
@@ -506,20 +446,23 @@ html, body {
         background: #001A1A;
         box-shadow: 2px 2px 2px 2px #001A1A;
     }
+
     .footer {
-        margin-top: 10rem;
+        margin-top: 5rem;
+        background: #248EE3;
     }
+    
     .footer-content {
         display: flex;
         justify-content: center;
-        line-height: 2rem;
         font-size: 100px;
         list-style: none;
     }
     .footer-content li {
-        margin: 1rem;
+        margin: 0.1rem;
+        max-width: 10%;
     }
     .footer-content li>a>i {
-        color: #248EE3
+        color: #001A1A
     }
 }
