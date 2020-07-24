@@ -3,8 +3,8 @@
   width: calc(20 * 5px);
   height: calc(20 * 5px);
   margin-top: 5rem;
-  margin-left: 1rem;
 }
+
 .sp-pixel::after {
   content: "";
   display: block;
