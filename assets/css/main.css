@@ -110,7 +110,7 @@ html, body {
     display: flex;
     text-decoration: none;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 .main-menu a>i {
@@ -139,10 +139,11 @@ html, body {
 .menu-toggle {
     color: #efefef;
     margin-left: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 999;
 }
 
 .menu-toggle:hover,
@@ -332,7 +333,7 @@ html, body {
     color: #248EE3
 }
 .footer-content i {
-    font-size: 30px;
+    font-size: 3rem;
     color: #248EE3;
 }
 @keyframes fadeIn {
