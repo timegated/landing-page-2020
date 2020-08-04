@@ -61,8 +61,8 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
     display: block;
     width: calc(20 * #{$size});
     height: calc(20 * #{$size});
-    margin-top: 5rem;
-    margin-left: 1rem;
+    // margin-top: 5rem;
+    // margin-left: 1rem;
 
 
     &::after {
@@ -76,17 +76,17 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
     }
 }
 
-@media all and (min-width: 800px) {
+@include breakpoint('<=large'){
     .sp-pixel {
         display: block;
-        width: calc(20 * 5px);
-        height: calc(20 * 5px);
+        width: calc(30 * 5px);
+        height: calc(30 * 5px);
         margin-top: 2rem;
         margin-right: 1.5rem;
 
         &::after {
             content: '';
-            display: block;
+            display: inline-block;
             width: 8px;
             height: 8px;
             margin-left: 2rem;

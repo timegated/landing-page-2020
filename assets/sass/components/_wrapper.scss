@@ -1,0 +1,127 @@
+/* Wrapper Component */
+
+	.wrapper {
+		position: relative;
+
+		> .inner {
+			padding: 5em 5em;
+			max-width: 100%;
+			width: 75em;
+
+			@include breakpoint('<=xlarge') {
+				padding: 4em 4em;
+			}
+
+			@include breakpoint('<=large') {
+				width: 100%;
+			}
+
+			@include breakpoint('<=small') {
+				padding:3em 2em;
+			}
+		}
+
+		&.alt {
+			background-color: #312450;
+		}
+
+		&.style1 {
+			background-color: #5e42a6;
+		}
+
+		&.style1-alt {
+			background-color: darken(#5e42a6, 10);
+		}
+
+		&.style2 {
+			background-color: #5052b5;
+		}
+
+		&.style2-alt {
+			background-color: darken(#5052b5, 10);
+		}
+
+		&.style3 {
+			background-color: #b74e91;
+		}
+
+		&.style3-alt {
+			background-color: darken(#b74e91, 10);
+		}
+
+		&.fullscreen {
+			display: flex;
+      flex-direction: column;			
+      justify-content: center;
+      min-height: 100vh;
+
+			body.is-ie & {
+				height: 100vh;
+			}
+
+			@include breakpoint('<=large') {
+				min-height: calc(100vh - 2.5em);
+
+				body.is-ie & {
+					height: calc(100vh - 2.5em);
+				}
+			}
+
+			@include breakpoint('<=small') {
+				padding: 2em 0;
+				min-height: 0;
+
+				body.is-ie & {
+					height: auto;
+				}
+			}
+		}
+
+		&.fade-up {
+			> .inner {
+        transform: translateY(0);
+        transition: opacity 1s ease;
+        transform: 1s ease;
+				opacity: 1.0;
+			}
+
+			&.inactive,
+			body.is-preload & {
+				> .inner {
+					opacity: 0;
+          transform: translateY(1em);
+				}
+			}
+		}
+
+		&.fade-down {
+			> .inner {
+        transform: translateY(0);
+        transition: opacity 1s ease;
+        transform: 1s ease;
+				opacity: 1.0;
+			}
+
+			&.inactive,
+			body.is-preload & {
+				> .inner {
+					opacity: 0;
+					transform: translateY(-1em);
+				}
+			}
+		}
+
+		&.fade {
+			> .inner {
+        transition: opacity 1s ease;
+				opacity: 1.0;
+			}
+
+			&.inactive,
+			body.is-preload & {
+				> .inner {
+					opacity: 0;
+				}
+			}
+		}
+	}
