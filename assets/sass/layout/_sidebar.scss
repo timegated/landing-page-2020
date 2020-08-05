@@ -1,6 +1,6 @@
 #sidebar {
   padding: 2.5rem 2.5rem;
-  background: #2c2c2c;
+  background: darken(#8095FF, 4);
   cursor: default;
   height: 100vh;
   left: 0;
@@ -21,10 +21,6 @@
     min-height: 100%;
     opacity: 1;
     width: 100%;
-
-    body.is-ie & {
-      height: 100%;
-    }
   }
   nav {
     > ul {
@@ -89,7 +85,7 @@
 
 				&:hover {
 					color:rgba(0,0,0);
-					background: darken(#72A0C1, 15);
+					background: $cornflower;
 				}
 
 				&.active {
@@ -100,21 +96,7 @@
 					}
 				}
     }
-  }
-  	body.is-preload & {
-			> .inner {
-				opacity: 0;
-			}
-
-			nav {
-				ul {
-					li {
-            transform: translateY(2em);
-						opacity: 0;
-					}
-				}
-			}
-		}
+	}
 
 		@include breakpoint('<=large') {
 			height: 3.5em;

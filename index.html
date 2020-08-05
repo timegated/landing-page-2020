@@ -1,109 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Daniel Beccaria Web Development">
-    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/selfpixel.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script type="module" src="assets/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/7e8ea69633.js" crossorigin="anonymous" defer></script>
+
     <title>DJB</title>
 </head>
 <body>
-    <!-- Navigation and Logo -->
-    <section id="sidebar">
-        <div class="inner">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/daniel-beccaria-29270293/">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/timegated">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="assets/resume/DJBResume_WebDev.pdf" target="_blank">Resume</a>
-                    </li>
-                    <li>
-                        <a href="#projects-container">Work</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+  <!-- Old Menu -->
+    <section id="sidebar"> 
+      <div class="inner">
+        <nav>
+          <ul>
+            <li>
+              <a href="#work" class="sidebar-link">Work</a>
+            </li>
+            <li>
+              <a href="#about" class="sidebar-link">About</a>
+            </li>
+              <li>
+                <a href="assets/resume/DJBResume_WebDev.pdf" target="_blank">Resume</a>
+              </li>
+            <li>
+              <a href="https://www.linkedin.com/in/daniel-beccaria-29270293/" target="_blank">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/timegated" target="_blank">
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </section>
-    <main>
-    <!-- Main Content -->
-        <!--Intro-->
-        <section id="intro-container" class="intro-container">
-            <div class="intro-container__typed" id="typedIntro">
-            </div>
+   <main id="wrapper">
+      <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="inner">
+            <h1>Daniel Beccaria</h1>
+            <h3 class="title-info">Front End Web Development</h3>
+            <ul class="actions">
+              <li>
+                <a href="#work" class="button primary large">See More</a>
+              </li>
+            </ul>
+        </div> 
+      </section>
+        <section id="work" class="wrapper style1-alt works">
+          <!-- Works Here -->
         </section>
-        <!--Projects-->
-        <div id="projects-container">
-            <div class="projects-title">
-                <h3>Work</h3>
+        <section id="about" class="wrapper style1">
+          <div class="inner">
+            <h2>About</h2>
+            <p>Staying up to date with current front-end technology while sticking with what works. Always
+            curious to try new tech and apply different approaches. I find the process of creating
+            functioning web applications
+            consistently rewarding.</p>
+            <h2>What I Do:</h2>
+            <div class="features">
+              <section>
+                <i class="icon-dark major fab fa-html5"></i>
+                <i class="icon-dark major fab fa-css3"></i>
+                <i class="icon-dark major fab fa-js"></i>
+                <p>Create responsive web pages with html, css, and javascript.</p>
+              </section>
+              <section>
+                <i class="icon-dark major fab fa-react"></i>
+                <i class="icon-dark major fab fa-node-js"></i>
+                <p>Build REST API's and user interfaces with React and NodeJS.</p>
+              </section>
+              <section>
+                <i class="icon-dark major fas fa-database"></i>
+                <p>CRUD operations with MongoDB (or SQL).</p>
+              </section>
+              <section>
+                <i class="icon-dark major fas fa-user-friends"></i>
+                <i class="icon-dark major fas fa-clipboard-list"></i>
+                <i class="icon-dark major fas fa-angle-double-right"></i>
+                <p>Collaborate with others where possible</p>
+              </section>
+              <section>
+                <i class="icon-dark major fas fa-layer-group"></i>
+                <i class="icon-dark major fas fa-laptop"></i>
+                <p>Choose the right tools for the right project</p>
+              </section>
+              <section>
+                <i class="icon-dark major far fa-smile"></i>
+                <p>Maintain a positive mindset on the search for efficient and clear solutions to complex problems</p>
+              </section>
             </div>
-            <div id="projects" class="projects-flex">
-            
-            </div>
-        </div>
-        <!--About Me-->
-        <div id="about" class="about-container">
-            <div class="about-title">
-                <h3>About</h3>
-            </div>
-            <div class="about-content">
-                <p class="about-blurb"> Staying up to date with current front-end technology while sticking with what works. Always
-                    curious to try new tech, apply different approaches, and work as part of a team. I find the process of creating functioning web applications
-                    consistently rewarding.</p>
-            </div>
-        </div>
-    </main>
-    <!-- Footer -->
-    <footer class="footer">
-       <ul class="footer-content">
-           <li>
-               <a href="#projects-container">
-                   <i class="fab fa-react"></i>
-                </a>
-            </li>
-           <li>
-               <a href="#projects-container">
-                   <i class="fab fa-node-js"></i>
-                </a>
-            </li>
-           <li>
-               <a href="#projects-container">
-                   <i class="fab fa-js-square"></i>
-                </a>
-            </li>
-           <li>
-               <a href="#projects-container">
-                   <i class="fab fa-html5"></i>
-                </a>
-            </li>
-           <li>
-               <a href="#projects-container">
-                   <i class="fab fa-css3-alt"></i>
-                </a>
-            </li>
-           <li>
-               <a href="#projects-container">
-                   <i class="fas fa-database"></i>
-                </a>
-            </li>
-       </ul>
-    </footer>
-    <script src="assets/js/main.js" type="module"></script>
-    <script src="https://kit.fontawesome.com/7e8ea69633.js" crossorigin="anonymous"></script>
-
-    
+          </div>
+        </section>
+   </main>
 </body>
 </html>
