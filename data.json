@@ -3,7 +3,7 @@
         {
             "title": "WoW Class Tracker",
             "summary": "App designed to help players keep track of their items",
-            "image": "assets/images/classtracker.PNG",
+            "image": "assets/images/classtrackerv2.jpeg",
             "github": "https://github.com/timegated/class-tracker",
             "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
             "deployed": "https://wowclasstracker.herokuapp.com/",
@@ -23,7 +23,7 @@
             "summary": "Calculator project showcasing event delegation",
             "image": "assets/images/classtracker.PNG",
             "github": "https://github.com/timegated/event-delecalculator",
-            "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
+            "stack": ["fab fa-html5", "fab fa-css3-alt"],
             "deployed": "https://timegated.github.io/event-delecalculator/calc.html",
             "year": 2019
         },
