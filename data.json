@@ -12,14 +12,14 @@
         {
             "title": "Book Search",
             "summary": "A mini-fullstack react application that searches for books",
-            "image": "assets/images/classtracker.PNG",
+            "image": "assets/images/booksearch.JPG",
             "github": "https://github.com/timegated/react-books-search",
             "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
             "deployed": "https://sleepy-bayou-19372.herokuapp.com/",
             "year": 2019
         },
         {
-            "title": "Event-Delecalculator",
+            "title": "Calculator",
             "summary": "Calculator project showcasing event delegation",
             "image": "assets/images/classtracker.PNG",
             "github": "https://github.com/timegated/event-delecalculator",
