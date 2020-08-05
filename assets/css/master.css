@@ -86,7 +86,7 @@ html {
 }
 
 body {
-  background: #312450;
+  background: #72A0C1;
 }
 
 /* Type */
@@ -139,7 +139,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
+  color: #2c2c2c;
   font-weight: bold;
   line-height: 1.5;
   margin: 0 0 0.5em 0;
@@ -281,6 +281,7 @@ hr.major {
   display: flex;
   flex-direction: row;
   min-height: 22.5rem;
+  border: 1px solid #000;
 }
 .works > section > .image {
   background-position: center center;
@@ -305,6 +306,46 @@ hr.major {
   opacity: 0;
   top: 0;
   width: 100%;
+}
+.works > section > .content {
+  padding: 4em 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(75em - 25em);
+  -ms-flex: 1;
+}
+.works > section > .content > .inner {
+  transform: translateX(0) translateY(0);
+  transition: opacity 0.5s ease;
+  transform: 0.5s ease;
+  opacity: 1;
+}
+@media screen and (max-width: 1680px) {
+  .works > section > .content {
+    padding: 4em 4em;
+  }
+}
+@media screen and (max-width: 980px) {
+  .works > section {
+    display: block;
+  }
+  .works > section > .image {
+    width: 100%;
+    height: 50vh;
+  }
+  .works > section > .content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .works > section > .image {
+    height: 50vh;
+    min-height: 15em;
+  }
+  .works > section > .content {
+    padding: 3em 2em;
+  }
 }
 
 /* Wrapper Component */
@@ -341,7 +382,7 @@ hr.major {
   background-color: #003487;
 }
 .wrapper.style2 {
-  background-color: #72A0C1;
+  background-color: #5D8AA8;
 }
 .wrapper.style2-alt {
   background-color: #4f88b1;
@@ -656,17 +697,22 @@ body.is-ie #sidebar > .inner {
 #sidebar nav a {
   transition: color 0.2s ease;
   border: 2px solid #72A0C1;
+  border-radius: 3em;
   color: #efefef;
   display: block;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: bold;
   letter-spacing: 0.2em;
   line-height: 0.75;
   outline: 0;
-  padding: 0.5em 0;
+  padding: 1em;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
+}
+#sidebar nav a span {
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
 }
 #sidebar nav a:before, #sidebar nav a:after {
   border-radius: 0.2em;

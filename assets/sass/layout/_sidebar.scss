@@ -47,20 +47,24 @@
     }
     a {
       transition: color 0.2s ease;
-      border: 2px solid #72A0C1;
+			border: 2px solid #72A0C1;
+			border-radius: 3em;
       color: #efefef;
       display: block;
-      font-size: 0.8em;
+      font-size: 0.9em;
       font-weight: bold;
       letter-spacing: 0.2em;
       line-height: .75;
       outline: 0;
-      padding: 0.5em 0;
+      padding: 1em;
       position: relative;
       text-decoration: none;
-      text-transform: uppercase;
+			text-transform: uppercase;
 
-      
+      span {
+				text-transform: lowercase;
+				letter-spacing: 0.1em;
+			}
 				&:before,
 				&:after {
 					border-radius: 0.2em;
