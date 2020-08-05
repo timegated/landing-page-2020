@@ -21,7 +21,7 @@
         {
             "title": "Calculator",
             "summary": "Calculator project showcasing event delegation",
-            "image": "assets/images/classtracker.PNG",
+            "image": "assets/images/eventcalc.PNG",
             "github": "https://github.com/timegated/event-delecalculator",
             "stack": ["fab fa-html5", "fab fa-css3-alt"],
             "deployed": "https://timegated.github.io/event-delecalculator/calc.html",
@@ -30,7 +30,7 @@
         {
             "title": "Shopping List",
             "summary": "Learning tool for fullstack applications built with react and mongodb",
-            "image": "assets/images/classtracker.PNG",
+            "image": "assets/images/shlistjpg.PNG",
             "github": "https://github.com/timegated/shopping-list-hooks",
             "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
             "deployed": "https://dry-basin-38264.herokuapp.com/",
