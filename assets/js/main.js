@@ -5,6 +5,6 @@ import fetchProjects from './modules/fetchProjects.js';
 
 fetchProjects('https://raw.githubusercontent.com/timegated/landing-page-2020/master/data.json').then(function (result) {
     container.projects = result.projects;
-    typeEffectOnScreen();
+    // typeEffectOnScreen();
     container.init();
 });
