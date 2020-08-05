@@ -1,0 +1,12 @@
+.icon {
+  border-bottom: none;
+  position: relative;
+  font-size: 1.5em;
+  color: $bg-light;
+  line-height: 2.5em;
+  margin: 0.5em;
+
+  & .icon-dark {
+    color: $bg-dark;
+  }
+} 

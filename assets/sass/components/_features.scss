@@ -1,0 +1,57 @@
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1em;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  section {
+    padding: 3em 3em 0.5em 4em;
+    width: 50%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+
+    &:nth-child(-n + 2) {
+      border-top-width: 0;
+    }
+
+    &:nth-child(2n) {
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+  @include breakpoint('<=medium') {
+			display: block;
+
+			section {
+				border-top-width: 1px !important;
+				border-left-width: 0 !important;
+				width: 100%;
+
+				&:first-child {
+					border-top-width: 0 !important;
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			section {
+        padding: 2em 1.5em 0.5em 4em;
+
+				.icon {
+					left: 1.5em;
+					top: 2em;
+				}
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			section {
+        padding: 2em 1.5em 0;
+				.icon {
+					left: 0;
+					position: relative;
+					top: 0;
+				}
+			}
+		}
+}

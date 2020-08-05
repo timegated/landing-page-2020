@@ -8,6 +8,9 @@
 			max-width: 100%;
 			width: 75em;
 
+			> .title-info {
+				margin-bottom: 4em;
+			}
 			@include breakpoint('<=xlarge') {
 				padding: 4em 4em;
 			}
@@ -43,10 +46,6 @@
       justify-content: center;
       min-height: 100vh;
 
-			body.is-ie & {
-				height: 100vh;
-			}
-
 			@include breakpoint('<=large') {
 				min-height: calc(100vh - 2.5em);
 
@@ -61,54 +60,6 @@
 
 				body.is-ie & {
 					height: auto;
-				}
-			}
-		}
-
-		&.fade-up {
-			> .inner {
-        transform: translateY(0);
-        transition: opacity 1s ease;
-        transform: 1s ease;
-				opacity: 1.0;
-			}
-
-			&.inactive,
-			body.is-preload & {
-				> .inner {
-					opacity: 0;
-          transform: translateY(1em);
-				}
-			}
-		}
-
-		&.fade-down {
-			> .inner {
-        transform: translateY(0);
-        transition: opacity 1s ease;
-        transform: 1s ease;
-				opacity: 1.0;
-			}
-
-			&.inactive,
-			body.is-preload & {
-				> .inner {
-					opacity: 0;
-					transform: translateY(-1em);
-				}
-			}
-		}
-
-		&.fade {
-			> .inner {
-        transition: opacity 1s ease;
-				opacity: 1.0;
-			}
-
-			&.inactive,
-			body.is-preload & {
-				> .inner {
-					opacity: 0;
 				}
 			}
 		}

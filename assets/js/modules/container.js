@@ -26,12 +26,12 @@ const container = {
               <div class="inner">
                 <h2>${project.title}</h2>
                 <p>${project.summary}</p>
-               ${project.stack ? project.stack.map(icon => {
-                 console.log(icon)
-                 return `
-                  <i class="${icon}"></i>
+                    ${project.stack ? project.stack.map(icon => {
+                      console.log(icon)
+                      return `
+                  <i class="icon ${icon}"></i>
                  `
-               }).join(',')
+                    }).join('')
               : console.log("nothing here yet")}
                 <a href="${project.github}" target="_blank" class="button large">Github</a>
                 <a href="${project.deployed}" target="_blank" class="button primary large">Live</a>
