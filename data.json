@@ -14,6 +14,7 @@
             "summary": "A mini-fullstack react application that searches for books",
             "image": "assets/images/classtracker.PNG",
             "github": "https://github.com/timegated/react-books-search",
+            "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
             "deployed": "https://sleepy-bayou-19372.herokuapp.com/",
             "year": 2019
         },
@@ -22,6 +23,7 @@
             "summary": "Calculator project showcasing event delegation",
             "image": "assets/images/classtracker.PNG",
             "github": "https://github.com/timegated/event-delecalculator",
+            "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
             "deployed": "https://timegated.github.io/event-delecalculator/calc.html",
             "year": 2019
         },
@@ -30,6 +32,7 @@
             "summary": "Learning tool for fullstack applications built with react and mongodb",
             "image": "assets/images/classtracker.PNG",
             "github": "https://github.com/timegated/shopping-list-hooks",
+            "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
             "deployed": "https://dry-basin-38264.herokuapp.com/",
             "year": 2020
         }
