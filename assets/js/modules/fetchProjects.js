@@ -1,4 +1,5 @@
-const fetchProjects = (url) => {
+// AJAX
+const fetchProjects = async (url) => {
   return fetch(url).then(function (res) {
       return res.json()
   }).then(function (json) {

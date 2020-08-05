@@ -1,3 +1,5 @@
+// Typing Effect
+
 import container from './container.js';
 
 const { firstName, lastName, area } = container;

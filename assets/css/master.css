@@ -1,0 +1,852 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@500&display=swap");
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input, select, textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+body {
+  -ms-overflow-style: scrollbar;
+}
+
+@media screen and (max-width: 736px) {
+  html, body {
+    min-width: 320px;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #72A0C1;
+}
+
+/* Type */
+body, input, select, textarea {
+  color: #2c2c2c;
+  font-family: "Oswald", sans-serif;
+  font-size: 16.5pt;
+  font-weight: normal;
+  line-height: 1.75;
+}
+@media screen and (max-width: 1680px) {
+  body, input, select, textarea {
+    font-size: 13pt;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body, input, select, textarea {
+    font-size: 12pt;
+  }
+}
+@media screen and (max-width: 360px) {
+  body, input, select, textarea {
+    font-size: 11pt;
+  }
+}
+
+a {
+  transition: color 1s ease;
+  transition: border-bottom-color 1s ease;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom-color: transparent;
+  color: #ffffff;
+}
+
+strong, b {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+p {
+  margin: 0 0 2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c2c2c;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0 0 0.5em 0;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4.75em;
+}
+h1.major {
+  margin: 0 0 1.3em 0;
+  position: relative;
+  padding-bottom: 0.35em;
+}
+h1.major:after {
+  background-image: linear-gradient(to right, #5e42a6, #b74e91);
+  transition: max-width 1s ease;
+  border-radius: 0.2em;
+  bottom: 0;
+  content: "";
+  height: 0.05em;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.8em;
+}
+
+h6 {
+  font-size: 0.6em;
+}
+
+@media screen and (max-width: 736px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  h4 {
+    font-size: 0.8em;
+  }
+
+  h5 {
+    font-size: 0.6em;
+  }
+
+  h6 {
+    font-size: 0.6em;
+  }
+}
+sub {
+  font-size: 0.8em;
+  position: relative;
+  top: 0.5em;
+}
+
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.5em;
+}
+
+blockquote {
+  border-left: solid 4px rgba(255, 255, 255, 0.15);
+  font-style: italic;
+  margin: 0 0 2em 0;
+  padding: calc(2em / 4) 0 calc(2em / 4) 2em;
+}
+
+code {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.25em;
+  border: solid 1px rgba(255, 255, 255, 0.35);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+  margin: 0 0.25em;
+  padding: 0.25em 0.65em;
+}
+
+pre {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+  margin: 0 0 2em 0;
+}
+pre code {
+  display: block;
+  line-height: 1.75em;
+  padding: 1em 1.5em;
+  overflow-x: auto;
+}
+
+hr {
+  border: 0;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.35);
+  margin: 2em 0;
+}
+hr.major {
+  margin: calc(2em * 1.5) 0;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.works > section {
+  display: flex;
+  flex-direction: row;
+  min-height: 22.5rem;
+  border: 1px solid #000;
+}
+.works > section > .image {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0;
+  display: block;
+  position: relative;
+  width: 25em;
+}
+.works > section > .image img {
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.works > section > .image:before {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+}
+.works > section > .content {
+  padding: 4em 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(75em - 25em);
+  -ms-flex: 1;
+}
+.works > section > .content > .inner {
+  transform: translateX(0) translateY(0);
+  transition: opacity 0.5s ease;
+  transform: 0.5s ease;
+  opacity: 1;
+}
+@media screen and (max-width: 1680px) {
+  .works > section > .content {
+    padding: 4em 4em;
+  }
+}
+@media screen and (max-width: 980px) {
+  .works > section {
+    display: block;
+  }
+  .works > section > .image {
+    width: 100%;
+    height: 50vh;
+  }
+  .works > section > .content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .works > section > .image {
+    height: 50vh;
+    min-height: 15em;
+  }
+  .works > section > .content {
+    padding: 3em 2em;
+  }
+}
+
+/* Wrapper Component */
+.wrapper {
+  position: relative;
+}
+.wrapper > .inner {
+  padding: 5em 5em;
+  max-width: 100%;
+  width: 75em;
+}
+.wrapper > .inner > .title-info {
+  margin-bottom: 4em;
+}
+@media screen and (max-width: 1680px) {
+  .wrapper > .inner {
+    padding: 4em 4em;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .wrapper > .inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .wrapper > .inner {
+    padding: 3em 2em;
+  }
+}
+.wrapper.alt {
+  background-color: #72A0C1;
+}
+.wrapper.style1 {
+  background-color: #95b8d1;
+}
+.wrapper.style1-alt {
+  background-color: #4f88b1;
+}
+.wrapper.style2 {
+  background-color: #5D8AA8;
+}
+.wrapper.fullscreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+@media screen and (max-width: 1280px) {
+  .wrapper.fullscreen {
+    min-height: calc(100vh - 2.5em);
+  }
+  body.is-ie .wrapper.fullscreen {
+    height: calc(100vh - 2.5em);
+  }
+}
+@media screen and (max-width: 736px) {
+  .wrapper.fullscreen {
+    padding: 2em 0;
+    min-height: 0;
+  }
+  body.is-ie .wrapper.fullscreen {
+    height: auto;
+  }
+}
+
+/* Button */
+input[type=submit],
+input[type=reset],
+input[type=button],
+button,
+.button {
+  appearance: none;
+  transition: border-color 0.2s ease;
+  background-color: transparent;
+  border: solid 1px black !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 3em;
+  color: #2c2c2c !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.6em;
+  font-weight: bold;
+  height: calc(4.75em + 2px);
+  letter-spacing: 0.1em;
+  line-height: 4.75em;
+  outline: 0;
+  padding: 0 3.75em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+input[type=submit]:after,
+input[type=reset]:after,
+input[type=button]:after,
+button:after,
+.button:after {
+  transform: scale(0.25);
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  transform: 0.2s ease;
+  background-color: #312450;
+  border-radius: 3em;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+input[type=submit].icon:before,
+input[type=reset].icon:before,
+input[type=button].icon:before,
+button.icon:before,
+.button.icon:before {
+  margin-right: 0.75em;
+}
+input[type=submit].fit,
+input[type=reset].fit,
+input[type=button].fit,
+button.fit,
+.button.fit {
+  width: 100%;
+}
+input[type=submit].small,
+input[type=reset].small,
+input[type=button].small,
+button.small,
+.button.small {
+  font-size: 0.4em;
+}
+input[type=submit].large,
+input[type=reset].large,
+input[type=button].large,
+button.large,
+.button.large {
+  font-size: 0.8em;
+}
+input[type=submit].cta,
+input[type=reset].cta,
+input[type=button].cta,
+button.cta,
+.button.cta {
+  background: #84acc9;
+  color: #4f88b1;
+}
+input[type=submit].primary,
+input[type=reset].primary,
+input[type=button].primary,
+button.primary,
+.button.primary {
+  background-color: #ffffff;
+  color: #4f88b1 !important;
+}
+input[type=submit].primary:after,
+input[type=reset].primary:after,
+input[type=button].primary:after,
+button.primary:after,
+.button.primary:after {
+  display: none;
+}
+input[type=submit].disabled, input[type=submit]:disabled,
+input[type=reset].disabled,
+input[type=reset]:disabled,
+input[type=button].disabled,
+input[type=button]:disabled,
+button.disabled,
+button:disabled,
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  pointer-events: none;
+}
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover,
+button:hover,
+.button:hover {
+  border-color: #2c2c2c !important;
+  background: #4f88b1 !important;
+  color: #EFEFEF !important;
+}
+input[type=submit]:hover:after,
+input[type=reset]:hover:after,
+input[type=button]:hover:after,
+button:hover:after,
+.button:hover:after {
+  opacity: 0.05;
+  transform-origin: scale(1);
+}
+input[type=submit]:hover:active,
+input[type=reset]:hover:active,
+input[type=button]:hover:active,
+button:hover:active,
+.button:hover:active {
+  border-color: #ffffff !important;
+}
+input[type=submit]:hover:active:after,
+input[type=reset]:hover:active:after,
+input[type=button]:hover:active:after,
+button:hover:active:after,
+.button:hover:active:after {
+  opacity: 0.1;
+}
+
+.image {
+  border-radius: 0.5em;
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+.image img {
+  border-radius: 0.5em;
+  display: block;
+}
+.image.left, .image.right {
+  max-width: 40%;
+}
+.image.left img, .image.right img {
+  width: 100%;
+}
+.image.left {
+  float: left;
+  margin: 0 1.5rem 1em 0;
+  top: 0.25em;
+}
+.image.right {
+  float: right;
+  margin: 0 0 1em 1.5em;
+  top: 0.25em;
+}
+.image.fit {
+  display: block;
+  margin: 0 0 0.35em 0;
+  width: 100%;
+}
+.image.main {
+  display: block;
+  margin: 0 0 calc(2em * 1.5) 0;
+  width: 100%;
+}
+.image.main img {
+  width: 100%;
+}
+
+.icon {
+  border-bottom: none;
+  position: relative;
+  font-size: 1.5em;
+  color: #95b8d1;
+  line-height: 2.5em;
+  margin: 0.5em;
+}
+.icon .icon-dark {
+  color: #4f88b1;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1em;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.features section {
+  padding: 3em 3em 0.5em 4em;
+  width: 50%;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+.features section:nth-child(-n+2) {
+  border-top-width: 0;
+}
+.features section:nth-child(2n) {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 980px) {
+  .features {
+    display: block;
+  }
+  .features section {
+    border-top-width: 1px !important;
+    border-left-width: 0 !important;
+    width: 100%;
+  }
+  .features section:first-child {
+    border-top-width: 0 !important;
+  }
+}
+@media screen and (max-width: 736px) {
+  .features section {
+    padding: 2em 1.5em 0.5em 4em;
+  }
+  .features section .icon {
+    left: 1.5em;
+    top: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .features section {
+    padding: 2em 1.5em 0;
+  }
+  .features section .icon {
+    left: 0;
+    position: relative;
+    top: 0;
+  }
+}
+
+.sp-pixel {
+  display: block;
+  width: calc(5 * 20px);
+  height: calc(5 * 20px);
+}
+.sp-pixel::after {
+  content: "";
+  display: flex;
+  width: 20px;
+  height: 20px;
+  box-shadow:  0px 0px transparent, 20px 0px transparent, 40px 0px transparent, 60px 0px transparent, 80px 0px transparent, 100px 0px #2c2c2c, 120px 0px #2c2c2c, 140px 0px #2c2c2c, 160px 0px #2c2c2c, 180px 0px #2c2c2c, 200px 0px #2c2c2c, 220px 0px #2c2c2c, 240px 0px #2c2c2c, 260px 0px #2c2c2c, 280px 0px transparent, 300px 0px transparent, 320px 0px transparent, 340px 0px transparent, 360px 0px transparent, 380px 0px transparent, 400px 0px transparent, 420px 0px transparent, 440px 0px transparent, 0px 20px transparent, 20px 20px transparent, 40px 20px transparent, 60px 20px transparent, 80px 20px #2c2c2c, 100px 20px #2c2c2c, 120px 20px #2c2c2c, 140px 20px #2c2c2c, 160px 20px #2c2c2c, 180px 20px #2c2c2c, 200px 20px #2c2c2c, 220px 20px #2c2c2c, 240px 20px #2c2c2c, 260px 20px #2c2c2c, 280px 20px #2c2c2c, 300px 20px transparent, 320px 20px transparent, 340px 20px transparent, 360px 20px transparent, 380px 20px transparent, 400px 20px transparent, 420px 20px transparent, 440px 20px transparent, 0px 40px transparent, 20px 40px transparent, 40px 40px transparent, 60px 40px #2c2c2c, 80px 40px #2c2c2c, 100px 40px #2c2c2c, 120px 40px #2c2c2c, 140px 40px #2c2c2c, 160px 40px #2c2c2c, 180px 40px #2c2c2c, 200px 40px #2c2c2c, 220px 40px #2c2c2c, 240px 40px #2c2c2c, 260px 40px #2c2c2c, 280px 40px #2c2c2c, 300px 40px #2c2c2c, 320px 40px #2c2c2c, 340px 40px #2c2c2c, 360px 40px #2c2c2c, 380px 40px #2c2c2c, 400px 40px transparent, 420px 40px transparent, 440px 40px transparent, 0px 60px transparent, 20px 60px transparent, 40px 60px #2c2c2c, 60px 60px #2c2c2c, 80px 60px #2c2c2c, 100px 60px #2c2c2c, 120px 60px #2c2c2c, 140px 60px #2c2c2c, 160px 60px #2c2c2c, 180px 60px #2c2c2c, 200px 60px #2c2c2c, 220px 60px #2c2c2c, 240px 60px #2c2c2c, 260px 60px #2c2c2c, 280px 60px transparent, 300px 60px transparent, 320px 60px transparent, 340px 60px transparent, 360px 60px transparent, 380px 60px transparent, 400px 60px transparent, 420px 60px transparent, 440px 60px transparent, 0px 80px transparent, 20px 80px #2c2c2c, 40px 80px #2c2c2c, 60px 80px #2c2c2c, 80px 80px #f8ece7, 100px 80px #f8ece7, 120px 80px #f8ece7, 140px 80px #f8ece7, 160px 80px #f8ece7, 180px 80px #f8ece7, 200px 80px #f8ece7, 220px 80px #f8ece7, 240px 80px #f8ece7, 260px 80px #f8ece7, 280px 80px transparent, 300px 80px transparent, 320px 80px transparent, 340px 80px transparent, 360px 80px transparent, 380px 80px transparent, 400px 80px transparent, 420px 80px transparent, 440px 80px transparent, 0px 100px transparent, 20px 100px transparent, 40px 100px #211a23, 60px 100px #f8ece7, 80px 100px #f8ece7, 100px 100px #f8ece7, 120px 100px #f8ece7, 140px 100px #f8ece7, 160px 100px #f8ece7, 180px 100px #f8ece7, 200px 100px #f8ece7, 220px 100px #f8ece7, 240px 100px #f8ece7, 260px 100px #f8ece7, 280px 100px transparent, 300px 100px transparent, 320px 100px transparent, 340px 100px transparent, 360px 100px transparent, 380px 100px transparent, 400px 100px transparent, 420px 100px transparent, 440px 100px transparent, 0px 120px transparent, 20px 120px transparent, 40px 120px #211a23, 60px 120px #f8ece7, 80px 120px #211a23, 100px 120px #211a23, 120px 120px #211a23, 140px 120px #211a23, 160px 120px #f8ece7, 180px 120px #f8ece7, 200px 120px #f8ece7, 220px 120px #211a23, 240px 120px #211a23, 260px 120px #211a23, 280px 120px transparent, 300px 120px transparent, 320px 120px transparent, 340px 120px transparent, 360px 120px transparent, 380px 120px transparent, 400px 120px transparent, 420px 120px transparent, 440px 120px transparent, 0px 140px transparent, 20px 140px transparent, 40px 140px #211a23, 60px 140px #f8ece7, 80px 140px #8f8e8e, 100px 140px #8f8e8e, 120px 140px #8f8e8e, 140px 140px #8f8e8e, 160px 140px #f8ece7, 180px 140px #f8ece7, 200px 140px #8f8e8e, 220px 140px #8f8e8e, 240px 140px #8f8e8e, 260px 140px #8f8e8e, 280px 140px transparent, 300px 140px transparent, 320px 140px transparent, 340px 140px transparent, 360px 140px transparent, 380px 140px transparent, 400px 140px transparent, 420px 140px transparent, 440px 140px transparent, 0px 160px transparent, 20px 160px #8f8e8e, 40px 160px #8f8e8e, 60px 160px #8f8e8e, 80px 160px #8f8e8e, 100px 160px #efefef, 120px 160px #4d1b09, 140px 160px #8f8e8e, 160px 160px #8f8e8e, 180px 160px #8f8e8e, 200px 160px #8f8e8e, 220px 160px #efefef, 240px 160px #4d1b09, 260px 160px #8f8e8e, 280px 160px transparent, 300px 160px transparent, 320px 160px transparent, 340px 160px transparent, 360px 160px transparent, 380px 160px transparent, 400px 160px transparent, 420px 160px transparent, 440px 160px transparent, 0px 180px transparent, 20px 180px #f8ece7, 40px 180px #f8ece7, 60px 180px #f8ece7, 80px 180px #8f8e8e, 100px 180px #8f8e8e, 120px 180px #8f8e8e, 140px 180px #8f8e8e, 160px 180px #f8ece7, 180px 180px #dbccc6, 200px 180px #8f8e8e, 220px 180px #8f8e8e, 240px 180px #8f8e8e, 260px 180px #8f8e8e, 280px 180px transparent, 300px 180px transparent, 320px 180px transparent, 340px 180px transparent, 360px 180px transparent, 380px 180px transparent, 400px 180px transparent, 420px 180px transparent, 440px 180px transparent, 0px 200px transparent, 20px 200px transparent, 40px 200px #f8ece7, 60px 200px #f8ece7, 80px 200px #f8ece7, 100px 200px #f8ece7, 120px 200px #f8ece7, 140px 200px #f8ece7, 160px 200px #f8ece7, 180px 200px #dbccc6, 200px 200px #f8ece7, 220px 200px #f8ece7, 240px 200px #f8ece7, 260px 200px #f8ece7, 280px 200px transparent, 300px 200px transparent, 320px 200px transparent, 340px 200px transparent, 360px 200px transparent, 380px 200px transparent, 400px 200px transparent, 420px 200px transparent, 440px 200px transparent, 0px 220px transparent, 20px 220px transparent, 40px 220px #f8ece7, 60px 220px #f8ece7, 80px 220px #f8ece7, 100px 220px #f8ece7, 120px 220px #f8ece7, 140px 220px #f8ece7, 160px 220px #dbccc6, 180px 220px #dbccc6, 200px 220px #f8ece7, 220px 220px #f8ece7, 240px 220px #f8ece7, 260px 220px #f8ece7, 280px 220px transparent, 300px 220px transparent, 320px 220px transparent, 340px 220px transparent, 360px 220px transparent, 380px 220px transparent, 400px 220px transparent, 420px 220px transparent, 440px 220px transparent, 0px 240px transparent, 20px 240px transparent, 40px 240px transparent, 60px 240px #f8ece7, 80px 240px #f8ece7, 100px 240px #f8ece7, 120px 240px #f8ece7, 140px 240px #f8ece7, 160px 240px #f8ece7, 180px 240px #f8ece7, 200px 240px #f8ece7, 220px 240px #f8ece7, 240px 240px #f8ece7, 260px 240px #f8ece7, 280px 240px transparent, 300px 240px transparent, 320px 240px transparent, 340px 240px transparent, 360px 240px transparent, 380px 240px transparent, 400px 240px transparent, 420px 240px transparent, 440px 240px transparent, 0px 260px transparent, 20px 260px transparent, 40px 260px transparent, 60px 260px #f8ece7, 80px 260px #f8ece7, 100px 260px #f8ece7, 120px 260px #f8ece7, 140px 260px #dbccc6, 160px 260px #f8ece7, 180px 260px #f8ece7, 200px 260px #f8ece7, 220px 260px #f8ece7, 240px 260px #f8ece7, 260px 260px #f8ece7, 280px 260px transparent, 300px 260px transparent, 320px 260px transparent, 340px 260px transparent, 360px 260px transparent, 380px 260px transparent, 400px 260px transparent, 420px 260px transparent, 440px 260px transparent, 0px 280px transparent, 20px 280px transparent, 40px 280px transparent, 60px 280px transparent, 80px 280px #f8ece7, 100px 280px #f8ece7, 120px 280px #f8ece7, 140px 280px #dbccc6, 160px 280px #dbccc6, 180px 280px #dbccc6, 200px 280px #dbccc6, 220px 280px #f8ece7, 240px 280px #f8ece7, 260px 280px #f8ece7, 280px 280px transparent, 300px 280px transparent, 320px 280px transparent, 340px 280px transparent, 360px 280px transparent, 380px 280px transparent, 400px 280px transparent, 420px 280px transparent, 440px 280px transparent, 0px 300px transparent, 20px 300px transparent, 40px 300px transparent, 60px 300px transparent, 80px 300px transparent, 100px 300px #f8ece7, 120px 300px #f8ece7, 140px 300px #f8ece7, 160px 300px #f8ece7, 180px 300px #f8ece7, 200px 300px #f8ece7, 220px 300px #f8ece7, 240px 300px #f8ece7, 260px 300px transparent, 280px 300px transparent, 300px 300px transparent, 320px 300px transparent, 340px 300px transparent, 360px 300px transparent, 380px 300px transparent, 400px 300px transparent, 420px 300px transparent, 440px 300px transparent, 0px 320px transparent, 20px 320px transparent, 40px 320px transparent, 60px 320px transparent, 80px 320px transparent, 100px 320px transparent, 120px 320px #f8ece7, 140px 320px #f8ece7, 160px 320px #f8ece7, 180px 320px #f8ece7, 200px 320px #f8ece7, 220px 320px #f8ece7, 240px 320px #f8ece7, 260px 320px transparent, 280px 320px transparent, 300px 320px transparent, 320px 320px transparent, 340px 320px transparent, 360px 320px transparent, 380px 320px transparent, 400px 320px transparent, 420px 320px transparent, 440px 320px transparent, 0px 340px transparent, 20px 340px transparent, 40px 340px transparent, 60px 340px transparent, 80px 340px transparent, 100px 340px transparent, 120px 340px transparent, 140px 340px #f8ece7, 160px 340px #f8ece7, 180px 340px #f8ece7, 200px 340px #f8ece7, 220px 340px #f8ece7, 240px 340px transparent, 260px 340px transparent, 280px 340px transparent, 300px 340px transparent, 320px 340px transparent, 340px 340px transparent, 360px 340px transparent, 380px 340px transparent, 400px 340px transparent, 420px 340px transparent, 440px 340px transparent;
+}
+
+@media screen and (max-width: 1280px) {
+  .sp-pixel {
+    display: block;
+    width: calc(50 * 5px);
+    height: calc(50 * 5px);
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+  }
+  .sp-pixel::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 2rem;
+    box-shadow:  0px 0px transparent, 5px 0px transparent, 10px 0px transparent, 15px 0px transparent, 20px 0px transparent, 25px 0px #2c2c2c, 30px 0px #2c2c2c, 35px 0px #2c2c2c, 40px 0px #2c2c2c, 45px 0px #2c2c2c, 50px 0px #2c2c2c, 55px 0px #2c2c2c, 60px 0px #2c2c2c, 65px 0px #2c2c2c, 70px 0px transparent, 75px 0px transparent, 80px 0px transparent, 85px 0px transparent, 90px 0px transparent, 95px 0px transparent, 100px 0px transparent, 105px 0px transparent, 110px 0px transparent, 0px 5px transparent, 5px 5px transparent, 10px 5px transparent, 15px 5px transparent, 20px 5px #2c2c2c, 25px 5px #2c2c2c, 30px 5px #2c2c2c, 35px 5px #2c2c2c, 40px 5px #2c2c2c, 45px 5px #2c2c2c, 50px 5px #2c2c2c, 55px 5px #2c2c2c, 60px 5px #2c2c2c, 65px 5px #2c2c2c, 70px 5px #2c2c2c, 75px 5px transparent, 80px 5px transparent, 85px 5px transparent, 90px 5px transparent, 95px 5px transparent, 100px 5px transparent, 105px 5px transparent, 110px 5px transparent, 0px 10px transparent, 5px 10px transparent, 10px 10px transparent, 15px 10px #2c2c2c, 20px 10px #2c2c2c, 25px 10px #2c2c2c, 30px 10px #2c2c2c, 35px 10px #2c2c2c, 40px 10px #2c2c2c, 45px 10px #2c2c2c, 50px 10px #2c2c2c, 55px 10px #2c2c2c, 60px 10px #2c2c2c, 65px 10px #2c2c2c, 70px 10px #2c2c2c, 75px 10px #2c2c2c, 80px 10px #2c2c2c, 85px 10px #2c2c2c, 90px 10px #2c2c2c, 95px 10px #2c2c2c, 100px 10px transparent, 105px 10px transparent, 110px 10px transparent, 0px 15px transparent, 5px 15px transparent, 10px 15px #2c2c2c, 15px 15px #2c2c2c, 20px 15px #2c2c2c, 25px 15px #2c2c2c, 30px 15px #2c2c2c, 35px 15px #2c2c2c, 40px 15px #2c2c2c, 45px 15px #2c2c2c, 50px 15px #2c2c2c, 55px 15px #2c2c2c, 60px 15px #2c2c2c, 65px 15px #2c2c2c, 70px 15px transparent, 75px 15px transparent, 80px 15px transparent, 85px 15px transparent, 90px 15px transparent, 95px 15px transparent, 100px 15px transparent, 105px 15px transparent, 110px 15px transparent, 0px 20px transparent, 5px 20px #2c2c2c, 10px 20px #2c2c2c, 15px 20px #2c2c2c, 20px 20px #f8ece7, 25px 20px #f8ece7, 30px 20px #f8ece7, 35px 20px #f8ece7, 40px 20px #f8ece7, 45px 20px #f8ece7, 50px 20px #f8ece7, 55px 20px #f8ece7, 60px 20px #f8ece7, 65px 20px #f8ece7, 70px 20px transparent, 75px 20px transparent, 80px 20px transparent, 85px 20px transparent, 90px 20px transparent, 95px 20px transparent, 100px 20px transparent, 105px 20px transparent, 110px 20px transparent, 0px 25px transparent, 5px 25px transparent, 10px 25px #211a23, 15px 25px #f8ece7, 20px 25px #f8ece7, 25px 25px #f8ece7, 30px 25px #f8ece7, 35px 25px #f8ece7, 40px 25px #f8ece7, 45px 25px #f8ece7, 50px 25px #f8ece7, 55px 25px #f8ece7, 60px 25px #f8ece7, 65px 25px #f8ece7, 70px 25px transparent, 75px 25px transparent, 80px 25px transparent, 85px 25px transparent, 90px 25px transparent, 95px 25px transparent, 100px 25px transparent, 105px 25px transparent, 110px 25px transparent, 0px 30px transparent, 5px 30px transparent, 10px 30px #211a23, 15px 30px #f8ece7, 20px 30px #211a23, 25px 30px #211a23, 30px 30px #211a23, 35px 30px #211a23, 40px 30px #f8ece7, 45px 30px #f8ece7, 50px 30px #f8ece7, 55px 30px #211a23, 60px 30px #211a23, 65px 30px #211a23, 70px 30px transparent, 75px 30px transparent, 80px 30px transparent, 85px 30px transparent, 90px 30px transparent, 95px 30px transparent, 100px 30px transparent, 105px 30px transparent, 110px 30px transparent, 0px 35px transparent, 5px 35px transparent, 10px 35px #211a23, 15px 35px #f8ece7, 20px 35px #8f8e8e, 25px 35px #8f8e8e, 30px 35px #8f8e8e, 35px 35px #8f8e8e, 40px 35px #f8ece7, 45px 35px #f8ece7, 50px 35px #8f8e8e, 55px 35px #8f8e8e, 60px 35px #8f8e8e, 65px 35px #8f8e8e, 70px 35px transparent, 75px 35px transparent, 80px 35px transparent, 85px 35px transparent, 90px 35px transparent, 95px 35px transparent, 100px 35px transparent, 105px 35px transparent, 110px 35px transparent, 0px 40px transparent, 5px 40px #8f8e8e, 10px 40px #8f8e8e, 15px 40px #8f8e8e, 20px 40px #8f8e8e, 25px 40px #efefef, 30px 40px #4d1b09, 35px 40px #8f8e8e, 40px 40px #8f8e8e, 45px 40px #8f8e8e, 50px 40px #8f8e8e, 55px 40px #efefef, 60px 40px #4d1b09, 65px 40px #8f8e8e, 70px 40px transparent, 75px 40px transparent, 80px 40px transparent, 85px 40px transparent, 90px 40px transparent, 95px 40px transparent, 100px 40px transparent, 105px 40px transparent, 110px 40px transparent, 0px 45px transparent, 5px 45px #f8ece7, 10px 45px #f8ece7, 15px 45px #f8ece7, 20px 45px #8f8e8e, 25px 45px #8f8e8e, 30px 45px #8f8e8e, 35px 45px #8f8e8e, 40px 45px #f8ece7, 45px 45px #dbccc6, 50px 45px #8f8e8e, 55px 45px #8f8e8e, 60px 45px #8f8e8e, 65px 45px #8f8e8e, 70px 45px transparent, 75px 45px transparent, 80px 45px transparent, 85px 45px transparent, 90px 45px transparent, 95px 45px transparent, 100px 45px transparent, 105px 45px transparent, 110px 45px transparent, 0px 50px transparent, 5px 50px transparent, 10px 50px #f8ece7, 15px 50px #f8ece7, 20px 50px #f8ece7, 25px 50px #f8ece7, 30px 50px #f8ece7, 35px 50px #f8ece7, 40px 50px #f8ece7, 45px 50px #dbccc6, 50px 50px #f8ece7, 55px 50px #f8ece7, 60px 50px #f8ece7, 65px 50px #f8ece7, 70px 50px transparent, 75px 50px transparent, 80px 50px transparent, 85px 50px transparent, 90px 50px transparent, 95px 50px transparent, 100px 50px transparent, 105px 50px transparent, 110px 50px transparent, 0px 55px transparent, 5px 55px transparent, 10px 55px #f8ece7, 15px 55px #f8ece7, 20px 55px #f8ece7, 25px 55px #f8ece7, 30px 55px #f8ece7, 35px 55px #f8ece7, 40px 55px #dbccc6, 45px 55px #dbccc6, 50px 55px #f8ece7, 55px 55px #f8ece7, 60px 55px #f8ece7, 65px 55px #f8ece7, 70px 55px transparent, 75px 55px transparent, 80px 55px transparent, 85px 55px transparent, 90px 55px transparent, 95px 55px transparent, 100px 55px transparent, 105px 55px transparent, 110px 55px transparent, 0px 60px transparent, 5px 60px transparent, 10px 60px transparent, 15px 60px #f8ece7, 20px 60px #f8ece7, 25px 60px #f8ece7, 30px 60px #f8ece7, 35px 60px #f8ece7, 40px 60px #f8ece7, 45px 60px #f8ece7, 50px 60px #f8ece7, 55px 60px #f8ece7, 60px 60px #f8ece7, 65px 60px #f8ece7, 70px 60px transparent, 75px 60px transparent, 80px 60px transparent, 85px 60px transparent, 90px 60px transparent, 95px 60px transparent, 100px 60px transparent, 105px 60px transparent, 110px 60px transparent, 0px 65px transparent, 5px 65px transparent, 10px 65px transparent, 15px 65px #f8ece7, 20px 65px #f8ece7, 25px 65px #f8ece7, 30px 65px #f8ece7, 35px 65px #dbccc6, 40px 65px #f8ece7, 45px 65px #f8ece7, 50px 65px #f8ece7, 55px 65px #f8ece7, 60px 65px #f8ece7, 65px 65px #f8ece7, 70px 65px transparent, 75px 65px transparent, 80px 65px transparent, 85px 65px transparent, 90px 65px transparent, 95px 65px transparent, 100px 65px transparent, 105px 65px transparent, 110px 65px transparent, 0px 70px transparent, 5px 70px transparent, 10px 70px transparent, 15px 70px transparent, 20px 70px #f8ece7, 25px 70px #f8ece7, 30px 70px #f8ece7, 35px 70px #dbccc6, 40px 70px #dbccc6, 45px 70px #dbccc6, 50px 70px #dbccc6, 55px 70px #f8ece7, 60px 70px #f8ece7, 65px 70px #f8ece7, 70px 70px transparent, 75px 70px transparent, 80px 70px transparent, 85px 70px transparent, 90px 70px transparent, 95px 70px transparent, 100px 70px transparent, 105px 70px transparent, 110px 70px transparent, 0px 75px transparent, 5px 75px transparent, 10px 75px transparent, 15px 75px transparent, 20px 75px transparent, 25px 75px #f8ece7, 30px 75px #f8ece7, 35px 75px #f8ece7, 40px 75px #f8ece7, 45px 75px #f8ece7, 50px 75px #f8ece7, 55px 75px #f8ece7, 60px 75px #f8ece7, 65px 75px transparent, 70px 75px transparent, 75px 75px transparent, 80px 75px transparent, 85px 75px transparent, 90px 75px transparent, 95px 75px transparent, 100px 75px transparent, 105px 75px transparent, 110px 75px transparent, 0px 80px transparent, 5px 80px transparent, 10px 80px transparent, 15px 80px transparent, 20px 80px transparent, 25px 80px transparent, 30px 80px #f8ece7, 35px 80px #f8ece7, 40px 80px #f8ece7, 45px 80px #f8ece7, 50px 80px #f8ece7, 55px 80px #f8ece7, 60px 80px #f8ece7, 65px 80px transparent, 70px 80px transparent, 75px 80px transparent, 80px 80px transparent, 85px 80px transparent, 90px 80px transparent, 95px 80px transparent, 100px 80px transparent, 105px 80px transparent, 110px 80px transparent, 0px 85px transparent, 5px 85px transparent, 10px 85px transparent, 15px 85px transparent, 20px 85px transparent, 25px 85px transparent, 30px 85px transparent, 35px 85px #f8ece7, 40px 85px #f8ece7, 45px 85px #f8ece7, 50px 85px #f8ece7, 55px 85px #f8ece7, 60px 85px transparent, 65px 85px transparent, 70px 85px transparent, 75px 85px transparent, 80px 85px transparent, 85px 85px transparent, 90px 85px transparent, 95px 85px transparent, 100px 85px transparent, 105px 85px transparent, 110px 85px transparent;
+  }
+}
+#sidebar {
+  padding: 2.5rem 2.5rem;
+  background: #2c2c2c;
+  cursor: default;
+  height: 100vh;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  width: 18em;
+  z-index: 999;
+}
+#sidebar > .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(0);
+  transition: opacity 0.6s ease;
+  min-height: 100%;
+  opacity: 1;
+  width: 100%;
+}
+body.is-ie #sidebar > .inner {
+  height: 100%;
+}
+#sidebar nav > ul {
+  list-style: none;
+  padding: 0;
+}
+#sidebar nav > ul > li {
+  transform: translateY(0);
+  transition: opacity calc(1s * 0.15) ease;
+  transform: calc(1s * 0.75) ease;
+  margin: 1.5em 0 0 0;
+  opacity: 1;
+  padding: 0;
+  position: relative;
+}
+#sidebar nav > ul > li:first-child {
+  margin: 0;
+}
+#sidebar nav a {
+  transition: color 0.2s ease;
+  border: 2px solid #72A0C1;
+  border-radius: 3em;
+  color: #efefef;
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  line-height: 0.75;
+  outline: 0;
+  padding: 1em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#sidebar nav a span {
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
+}
+#sidebar nav a:before, #sidebar nav a:after {
+  border-radius: 0.2em;
+  bottom: 0;
+  content: "";
+  background: pink;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+#sidebar nav a:before {
+  background: #efefef;
+}
+#sidebar nav a:after {
+  background-image: linear-gradient(to right, red, pink);
+  transition: max-width 0.2s ease;
+  max-width: 0;
+}
+#sidebar nav a:hover {
+  color: black;
+  background: #467ba0;
+}
+#sidebar nav a.active {
+  color: #ffffff;
+}
+#sidebar nav a.active:after {
+  max-width: 100%;
+}
+body.is-preload #sidebar > .inner {
+  opacity: 0;
+}
+body.is-preload #sidebar nav ul li {
+  transform: translateY(2em);
+  opacity: 0;
+}
+@media screen and (max-width: 1280px) {
+  #sidebar {
+    height: 3.5em;
+    left: 0;
+    line-height: 3.5em;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+  }
+  #sidebar > .inner {
+    flex-direction: row;
+    align-items: stretch;
+    height: inherit;
+    line-height: inherit;
+  }
+  #sidebar nav {
+    height: inherit;
+    line-height: inherit;
+  }
+  #sidebar nav ul {
+    display: flex;
+    height: inherit;
+    line-height: inherit;
+    margin: 0;
+  }
+  #sidebar nav ul li {
+    display: block;
+    height: inherit;
+    line-height: inherit;
+    margin: 0 0 0 2em;
+    padding: 0;
+  }
+  #sidebar nav a {
+    height: inherit;
+    line-height: inherit;
+    padding: 0;
+    border: none;
+  }
+}
+@media screen and (max-width: 736px) {
+  #sidebar {
+    display: none;
+  }
+}
+
+#sidebar + #wrapper {
+  margin-left: 18em;
+}
+@media screen and (max-width: 1280px) {
+  #sidebar + #wrapper {
+    margin-left: 0;
+    padding-top: 3.5em;
+  }
+}
+@media screen and (max-width: 736px) {
+  #sidebar + #wrapper {
+    padding-top: 0;
+  }
+}
+#sidebar + #wrapper > .wrapper > .inner {
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=master.css.map */

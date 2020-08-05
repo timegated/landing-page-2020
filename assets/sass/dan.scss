@@ -25,7 +25,7 @@
     @return $result;
 }
 
-$size: 5px;
+$size: 20px;
 
 $t: transparent;
 $b: #2c2c2c;
@@ -59,36 +59,34 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
 
 .sp-pixel {
     display: block;
-    width: calc(20 * #{$size});
-    height: calc(20 * #{$size});
-    margin-top: 5rem;
-    margin-left: 1rem;
+    width: calc(5 * #{$size});
+    height: calc(5 * #{$size});
+    // margin: 0 auto;
 
 
     &::after {
         content: '';
-        display: block;
+        display: flex;
         width: $size;
         height: $size;
-        margin-left: 1rem;
         box-shadow:
             pixelize($dan, $size);
     }
 }
 
-@media all and (min-width: 800px) {
+@include breakpoint('<=large'){
     .sp-pixel {
         display: block;
-        width: calc(20 * 5px);
-        height: calc(20 * 5px);
+        width: calc(50 * 5px);
+        height: calc(50 * 5px);
         margin-top: 2rem;
         margin-right: 1.5rem;
 
         &::after {
             content: '';
-            display: block;
-            width: 8px;
-            height: 8px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
             margin-left: 2rem;
             box-shadow:
                 pixelize($dan, 5px)
