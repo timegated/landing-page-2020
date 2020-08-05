@@ -11,6 +11,7 @@
 			> .title-info {
 				margin-bottom: 4em;
 			}
+			
 			@include breakpoint('<=xlarge') {
 				padding: 4em 4em;
 			}

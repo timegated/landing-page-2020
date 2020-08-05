@@ -14,11 +14,6 @@ const container = {
   generateProjects() {
       this.targets.projectElement.innerHTML = `
       ${this.projects.map(function (project) {
-        if (project.stack === undefined) {
-          console.log('nothing here yet')
-        } else {
-          console.log(project.stack)
-        }
           return `
           <section>
              <a href="${project.github}" class="image"><img src=${project.image} alt="WoW Class Tracker" data-position="center center"></a>
@@ -27,7 +22,6 @@ const container = {
                 <h2>${project.title}</h2>
                 <p>${project.summary}</p>
                     ${project.stack ? project.stack.map(icon => {
-                      console.log(icon)
                       return `
                   <i class="icon ${icon}"></i>
                  `
