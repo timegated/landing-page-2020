@@ -1,6 +1,6 @@
 @import 'libs/breakpoints';
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-
+@import 'libs/vars';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@500&display=swap');
 // Breakpoints
   @include breakpoints((
 		xlarge:   ( 1281px,  1680px ),

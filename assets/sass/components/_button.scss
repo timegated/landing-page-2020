@@ -11,13 +11,13 @@ button,
   border: solid 1px black !important;
   border-color: rgba(255, 255, 255,0.05) !important;
   border-radius: 3em;
-  color: #ffffff !important;
+  color: $text-color !important;
   cursor: pointer;
   display: inline-block;
   font-size: 0.6em;
   font-weight: bold;
   height: calc(4.75em + 2px);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   line-height: 4.75em;
   outline: 0;
   padding: 0 3.75em;
@@ -78,8 +78,9 @@ button,
 		}
 
 		&:hover {
-			border-color: #412350 !important;
-
+			border-color: $text-color !important;
+      background: $bg-dark !important;
+      color: $text-neutral !important;
 			&:after {
 				opacity: 0.05;
         transform-origin: scale(1);

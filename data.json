@@ -5,6 +5,7 @@
             "summary": "App designed to help players keep track of their items",
             "image": "assets/images/classtracker.PNG",
             "github": "https://github.com/timegated/class-tracker",
+            "stack": ["fab fa-react", "fab fa-nodejs", "fas fa-database"],
             "deployed": "https://wowclasstracker.herokuapp.com/",
             "year": 2020
         },

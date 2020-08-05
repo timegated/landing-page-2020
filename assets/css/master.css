@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@500&display=swap");
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -91,7 +91,7 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  color: #312450;
+  color: #2c2c2c;
   font-family: "Oswald", sans-serif;
   font-size: 16.5pt;
   font-weight: normal;
@@ -116,7 +116,6 @@ body, input, select, textarea {
 a {
   transition: color 1s ease;
   transition: border-bottom-color 1s ease;
-  border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
   color: inherit;
   text-decoration: none;
 }
@@ -373,25 +372,16 @@ hr.major {
   }
 }
 .wrapper.alt {
-  background-color: #312450;
-}
-.wrapper.style1 {
   background-color: #72A0C1;
 }
+.wrapper.style1 {
+  background-color: #95b8d1;
+}
 .wrapper.style1-alt {
-  background-color: #003487;
+  background-color: #4f88b1;
 }
 .wrapper.style2 {
   background-color: #5D8AA8;
-}
-.wrapper.style2-alt {
-  background-color: #4f88b1;
-}
-.wrapper.style3 {
-  background-color: #b74e91;
-}
-.wrapper.style3-alt {
-  background-color: #953d75;
 }
 .wrapper.fullscreen {
   display: flex;
@@ -459,13 +449,13 @@ button,
   border: solid 1px black !important;
   border-color: rgba(255, 255, 255, 0.05) !important;
   border-radius: 3em;
-  color: #ffffff !important;
+  color: #2c2c2c !important;
   cursor: pointer;
   display: inline-block;
   font-size: 0.6em;
   font-weight: bold;
   height: calc(4.75em + 2px);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   line-height: 4.75em;
   outline: 0;
   padding: 0 3.75em;
@@ -555,7 +545,9 @@ input[type=reset]:hover,
 input[type=button]:hover,
 button:hover,
 .button:hover {
-  border-color: #412350 !important;
+  border-color: #2c2c2c !important;
+  background: #4f88b1 !important;
+  color: #EFEFEF !important;
 }
 input[type=submit]:hover:after,
 input[type=reset]:hover:after,
@@ -810,7 +802,7 @@ body.is-preload #sidebar nav ul li {
   }
 }
 #sidebar + #wrapper > .wrapper > .inner {
-  margin: 0 auto;
+  margin: 1.5em auto;
 }
 
 /*# sourceMappingURL=master.css.map */

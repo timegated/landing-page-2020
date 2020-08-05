@@ -1,3 +1,4 @@
+// Container Obj for DOM
 const container = {
   firstName: 'Daniel',
   lastName: 'Beccaria',
@@ -20,8 +21,8 @@ const container = {
               <div class="inner">
                 <h2>${project.title}</h2>
                 <p>${project.summary}</p>
-                <a href="${project.github}" target="_blank" class="button">Github</a>
-                <a href="${project.deployed}" target="_blank" class="button">Live</a>
+                <a href="${project.github}" target="_blank" class="button large">Github</a>
+                <a href="${project.deployed}" target="_blank" class="button primary large">Live</a>
               </div>
           </section>
           `
