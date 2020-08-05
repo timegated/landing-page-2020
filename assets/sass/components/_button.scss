@@ -60,10 +60,14 @@ button,
 		&.large {
 			font-size: 0.8em;
 		}
+    &.cta {
+      background: $bg-cta;
+      color: $bg-dark;
+    }
 
 		&.primary {
 			background-color: #ffffff;
-			color: #312450 !important;
+			color: $bg-dark !important;
 
 			&:after {
 				display: none;
