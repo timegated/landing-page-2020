@@ -149,7 +149,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-  font-size: 4.75em;
+  font-size: 3.5em;
 }
 h1.major {
   margin: 0 0 1.3em 0;
@@ -169,7 +169,7 @@ h1.major:after {
 }
 
 h2 {
-  font-size: 2.75em;
+  font-size: 2.5em;
 }
 
 h3 {
