@@ -6,7 +6,7 @@
             "image": "assets/images/classtrackerv2.JPG",
             "github": "https://github.com/timegated/class-tracker",
             "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
-            "deployed": "https://wowclasstracker.herokuapp.com/",
+            "deployed": "https://wowclasstracker.com/",
             "year": 2020
         },
         {
