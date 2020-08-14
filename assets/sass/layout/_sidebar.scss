@@ -1,6 +1,6 @@
 #sidebar {
   padding: 2.5rem 2.5rem;
-  background: darken(#8095FF, 4);
+  background: lighten($text-color, 4);
   cursor: default;
   height: 100vh;
   left: 0;

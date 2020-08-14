@@ -72,13 +72,6 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
     }
 }
 
-// @include breakpoint('<=large'){
-//     .sp-pixel {
-//         display: none;
-//     }
-
-// }
-
 @include breakpoint('<=medium') {
     .sp-pixel {
         display: block;

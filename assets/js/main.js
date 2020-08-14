@@ -1,4 +1,4 @@
-import typeEffectOnScreen from './modules/typeEffect.js';
+// import typeEffectOnScreen from './modules/typeEffect.js';
 import container from './modules/container.js';
 import fetchProjects from './modules/fetchProjects.js';
 import handleScroll from './modules/scrollTo.js';
