@@ -3,7 +3,6 @@ import container from "./container.js";
 import fetchProjects from "./fetchProjects.js";
 import handleScroll from "./scrollTo.js";
 import "../css/master.scss";
-import "../data.json";
 import "../images/classtrackerv2.JPG";
 import "../images/booksearch.JPG";
 import "../images/eventcalc.png";
