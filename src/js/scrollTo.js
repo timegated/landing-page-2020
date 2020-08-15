@@ -1,9 +1,6 @@
 const buttons = Array.from(document.querySelectorAll('.button'));
 const sideBarLinks = Array.from(document.querySelectorAll('.sidebar-link'));
 
-// for (const button of buttons) {
-//   button.addEventListener("click", handleScroll);
-// }
 function assignEvent(arr) {
   return arr.forEach(i => {
     i.addEventListener("click", handleScroll);

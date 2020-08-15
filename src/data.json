@@ -3,7 +3,7 @@
         {
             "title": "WoW Class Tracker",
             "summary": "App designed to help players keep track of their items",
-            "image": "assets/images/classtrackerv2.JPG",
+            "image": "../dist/images/classtrackerv2.JPG",
             "github": "https://github.com/timegated/class-tracker",
             "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
             "deployed": "https://wowclasstracker.com/",
@@ -12,7 +12,7 @@
         {
             "title": "Book Search",
             "summary": "A mini-fullstack react application that searches for books",
-            "image": "assets/images/booksearch.JPG",
+            "image": "../dist/images/booksearch.JPG",
             "github": "https://github.com/timegated/react-books-search",
             "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
             "deployed": "https://sleepy-bayou-19372.herokuapp.com/",
@@ -21,7 +21,7 @@
         {
             "title": "Calculator",
             "summary": "Calculator project showcasing event delegation",
-            "image": "assets/images/eventcalc.PNG",
+            "image": "../dist/images/eventcalc.PNG",
             "github": "https://github.com/timegated/event-delecalculator",
             "stack": ["fab fa-html5", "fab fa-css3-alt"],
             "deployed": "https://timegated.github.io/event-delecalculator/calc.html",
@@ -30,7 +30,7 @@
         {
             "title": "Shopping List",
             "summary": "Learning tool for fullstack applications built with react and mongodb",
-            "image": "assets/images/shlistjpg.PNG",
+            "image": "../dist/images/shlistjpg.PNG",
             "github": "https://github.com/timegated/shopping-list-hooks",
             "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
             "deployed": "https://dry-basin-38264.herokuapp.com/",

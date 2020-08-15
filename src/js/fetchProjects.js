@@ -1,4 +1,3 @@
-// AJAX
 const fetchProjects = async (url) => {
   return fetch(url).then(function (res) {
       return res.json()

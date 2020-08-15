@@ -1,4 +1,3 @@
-// Container Obj for DOM
 const container = {
   firstName: 'Daniel',
   lastName: 'Beccaria',
@@ -16,7 +15,7 @@ const container = {
       ${this.projects.map(function (project) {
           return `
           <section>
-             <a href="${project.github}" class="image"><img src=${project.image} alt=${project.title} data-position="center center"></a>
+             <a href="${project.github}" class="image"><img src="${project.image}" alt="${project.title}" data-position="center center"></a>
             <div class="content">
               <div class="inner">
                 <h2>${project.title}</h2>

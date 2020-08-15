@@ -1,5 +1,6 @@
 const path = require("path");
 const common = require("./webpack.common");
+const json = require("./src/data.json")
 const { merge } = require("webpack-merge");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -34,10 +35,24 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
+        test: /\.(png|svg|jpe?g|gif)$/i,
+        include: /images/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
+              publicPath: 'images/'
+            }
+          },
+        ],
+      },
+      {
         test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          "css-loader",
         ],
       },
       {
