@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Daniel Beccaria Web Development">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script type="module" src="assets/js/main.js" defer></script>
-    <script src="https://kit.fontawesome.com/7e8ea69633.js" crossorigin="anonymous" defer></script>
-
     <title>DJB</title>
 </head>
 <body>
@@ -16,21 +12,21 @@
       <div class="inner">
         <nav>
           <ul>
-            <li>
+            <li id="button">
               <a href="#work" class="sidebar-link">Work</a>
             </li>
-            <li>
+            <li id="button">
               <a href="#about" class="sidebar-link">About</a>
             </li>
-              <li>
+              <li id="button">
                 <a href="assets/resume/DJBResume_WebDev.pdf" target="_blank">Resume</a>
               </li>
-            <li>
+            <li id="button">
               <a href="https://www.linkedin.com/in/daniel-beccaria-29270293/" target="_blank">
                 LinkedIn
               </a>
             </li>
-            <li>
+            <li id="button">
               <a href="https://github.com/timegated" target="_blank">
                 GitHub
               </a>
@@ -42,14 +38,19 @@
    <main id="wrapper">
       <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
-            <h1>Daniel Beccaria</h1>
-            <h3 class="title-info">JS | React | NodeJS | CSS | SASS | Hosting </h3>
+            <div id="typedIntro"></div>
+            <h3 class="title-info animate__animated animate__backInDown">
+              <span class="primary-text animate__animated animate__rollIn animate__slow">| JS |</span>
+              <span class="animate__animated animate__rollIn animate__delay-2s">React |</span>
+              <span class="animate__animated animate__rollIn animate__delay-3s">NodeJS |</span>
+              <span class="animate__animated animate__rollIn animate__delay-4s">CSS |</span>
+            </h3>
             <a href="#work" class="button primary">See More</a>
         </div> 
         
       </section>
         <section id="work" class="wrapper style1-alt works">
-          <!-- Works Here -->
+          <!-- Selected Works Here -->
         </section>
         <section id="about" class="wrapper style1">
           <div class="inner">
@@ -94,5 +95,6 @@
           </div>
         </section>
    </main>
+  <script src="https://kit.fontawesome.com/7e8ea69633.js" crossorigin="anonymous"></script>
 </body>
 </html>

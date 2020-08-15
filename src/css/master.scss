@@ -1,6 +1,7 @@
-@import 'libs/breakpoints';
-@import 'libs/vars';
+@import 'breakpoints';
+@import 'vars';
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@500&display=swap');
+@import url('../../node_modules/animate.css/animate.min.css');
 // Breakpoints
   @include breakpoints((
 		xlarge:   ( 1281px,  1680px ),
@@ -12,19 +13,19 @@
 	));
 
 // Base
-@import 'base/reset';
-@import 'base/page';
-@import 'base/typography';
+@import 'reset';
+@import 'page';
+@import 'typography';
 
 // Components
-@import 'components/works';
-@import 'components/wrapper';
-@import 'components/button';
-@import 'components/image';
-@import 'components/icon';
-@import 'components/features';
+@import 'works';
+@import 'wrapper';
+@import 'button';
+@import 'image';
+@import 'icon';
+@import 'features';
 @import 'dan';
 
 // Layout
-@import 'layout/sidebar';
-@import 'layout/wrapper';
+@import 'sidebar';
+@import 'wrapperlayout';

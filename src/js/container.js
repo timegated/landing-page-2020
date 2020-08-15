@@ -9,14 +9,14 @@ const container = {
       projectElement: document.getElementById('work'),
       typedIntroElement: document.getElementById('typedIntro'),
       navBar: document.querySelector('.navbar'),
-      sideBarButton: document.querySelector('#button'),
+      sideBarButton: document.querySelectorAll('#button'),
   },
   generateProjects() {
       this.targets.projectElement.innerHTML = `
       ${this.projects.map(function (project) {
           return `
           <section>
-             <a href="${project.github}" class="image"><img src=${project.image} alt="WoW Class Tracker" data-position="center center"></a>
+             <a href="${project.github}" class="image"><img src=${project.image} alt=${project.title} data-position="center center"></a>
             <div class="content">
               <div class="inner">
                 <h2>${project.title}</h2>
