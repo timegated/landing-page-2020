@@ -9,7 +9,7 @@ import "../images/eventcalc.png";
 import "../images/shlistjpg.png";
 
 
-fetchProjects("../../data.json").then((res) => {
+fetchProjects("../data.json").then((res) => {
     container.projects = res.projects;
     const buttons = Array.from(container.targets.sideBarButton);
     buttons.forEach(element => {

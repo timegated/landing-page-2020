@@ -21,9 +21,9 @@ module.exports = merge(common, {
         use: [
           "style-loader",
           "css-loader",
-          "sass-loader"
-        ]
-      }
-    ]
-  }
+          "sass-loader",
+        ],
+      },
+    ],
+  },
 });
