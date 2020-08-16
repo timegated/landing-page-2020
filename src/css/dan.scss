@@ -25,7 +25,7 @@
     @return $result;
 }
 
-$size: 0.5em;
+$size: 1em;
 
 $t: transparent;
 $b: #2c2c2c;
@@ -61,7 +61,7 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
     display: block;
     width: calc(5 * #{$size});
     height: calc(5 * #{$size});
-
+    margin-left: 50%;
     &::after {
         content: '';
         display: block;
@@ -74,9 +74,6 @@ $dan: (($t, $t, $t, $t, $t, $b, $b, $b, $b, $b, $b, $b, $b, $b, $t, $t, $t, $t, 
 
 @include breakpoint('<=medium') {
     .sp-pixel {
-        display: block;
-        width: $size;
-        height: 5em;
-        margin-left: 25%;
+       display: none;
     }
 }
