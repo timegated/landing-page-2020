@@ -1,3 +1,8 @@
+import '../images/classtrackerv2.JPG';
+import '../images/booksearch.JPG';
+import '../images/eventcalc.png';
+import '../images/shlistjpg.png';
+
 const container = {
   firstName: 'Daniel',
   lastName: 'Beccaria',
@@ -5,40 +10,40 @@ const container = {
   interests: ['javascript', 'reactjs', 'nodejs'],
   projects: [
     {
-      "title": "WoW Class Tracker",
-      "summary": "App designed to help players keep track of their items",
-      "image": "../dist/images/classtrackerv2.JPG",
-      "github": "https://github.com/timegated/class-tracker",
-      "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
-      "deployed": "https://wowclasstracker.com/",
-      "year": 2020
+      title: "WoW Class Tracker",
+      summary: "App designed to help players keep track of their items",
+      image: "../dist/images/classtrackerv2.JPG",
+      github: "https://github.com/timegated/class-tracker",
+      stack: ["fab fa-react", "fab fa-node-js", "fas fa-database"],
+      deployed: "https://wowclasstracker.com/",
+      year: 2020
     },
     {
-      "title": "Book Search",
-      "summary": "A mini-fullstack react application that searches for books",
-      "image": "../dist/images/booksearch.JPG",
-      "github": "https://github.com/timegated/react-books-search",
-      "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
-      "deployed": "https://sleepy-bayou-19372.herokuapp.com/",
-      "year": 2019
+      title: "Book Search",
+      summary: "A mini-fullstack react application that searches for books",
+      image: "../dist/images/booksearch.JPG",
+      github: "https://github.com/timegated/react-books-search",
+      stack: ["fab fa-react", "fab fa-node-js", "fas fa-database"],
+      deployed: "https://sleepy-bayou-19372.herokuapp.com/",
+      year: 2019
     },
     {
-      "title": "Calculator",
-      "summary": "Calculator project showcasing event delegation",
-      "image": "../dist/images/eventcalc.PNG",
-      "github": "https://github.com/timegated/event-delecalculator",
-      "stack": ["fab fa-html5", "fab fa-css3-alt"],
-      "deployed": "https://timegated.github.io/event-delecalculator/calc.html",
-      "year": 2019
+      title: "Calculator",
+      summary: "Calculator project showcasing event delegation",
+      image: "../dist/images/eventcalc.png",
+      github: "https://github.com/timegated/event-delecalculator",
+      stack: ["fab fa-html5", "fab fa-css3-alt"],
+      deployed: "https://timegated.github.io/event-delecalculator/calc.html",
+      year: 2019
     },
     {
-      "title": "Shopping List",
-      "summary": "Learning tool for fullstack applications built with react and mongodb",
-      "image": "../dist/images/shlistjpg.PNG",
-      "github": "https://github.com/timegated/shopping-list-hooks",
-      "stack": ["fab fa-react", "fab fa-node-js", "fas fa-database"],
-      "deployed": "https://dry-basin-38264.herokuapp.com/",
-      "year": 2020
+      title: "Shopping List",
+      summary: "Learning tool for fullstack applications built with react and mongodb",
+      image: "../dist/images/shlistjpg.png",
+      github: "https://github.com/timegated/shopping-list-hooks",
+      stack: ["fab fa-react", "fab fa-node-js", "fas fa-database"],
+      deployed: "https://dry-basin-38264.herokuapp.com/",
+      year: 2020
     }
   ],
   targets: {

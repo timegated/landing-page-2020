@@ -3,7 +3,6 @@ import container from "./container.js";
 import handleScroll from "./scrollTo.js";
 import "../css/master.scss";
 
-
 const buttons = Array.from(container.targets.sideBarButton);
 
 buttons.forEach(element => {
