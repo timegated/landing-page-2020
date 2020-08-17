@@ -34,27 +34,6 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.(png|svg|jpe?g|gif)$/i,
-        include: /images/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'images/',
-              publicPath: 'images/',
-            }
-          },
-        ],
-      },
-      {
-        test: /\.css$/i,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-        ],
-      },
-      {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader, 
