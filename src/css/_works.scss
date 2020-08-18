@@ -11,7 +11,7 @@
       border-radius: 0;
       display: block;
       position: relative;
-      width: 25em;
+      width: 75em;
 
       img {
       border-radius: 0;
@@ -67,7 +67,7 @@
 
     @include breakpoint('<=small') {
       > .image {
-        height: 50vh;
+        height: 50%;
         min-height: 15em;
       }
 
