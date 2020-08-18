@@ -2,11 +2,14 @@
   border-bottom: none;
   position: relative;
   font-size: 1.5em;
-  color: $bg-light;
+  color: $black;
   line-height: 2.5em;
   margin: 0.5em;
 
   & .icon-dark {
     color: $bg-dark;
+    font-size: 2.5em;
+    line-height: 2.5em;
+    margin: 0.5em;
   }
 } 

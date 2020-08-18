@@ -56,7 +56,7 @@ const container = {
                 <p>${project.summary}</p>
                     ${project.stack ? project.stack.map(icon => {
                       return `
-                  <i class="icon ${icon}"></i>
+                  <i class="icon icon-dark ${icon}"></i>
                  `
                     }).join('')
               : console.log("nothing here yet")}
