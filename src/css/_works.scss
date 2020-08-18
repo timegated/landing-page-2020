@@ -30,6 +30,11 @@
         top: 0;
         width: 100%;
       }
+      &:hover, 
+      &:active {
+        border: 5px solid $cornflower-alt;
+        transition: all 0.2s ease;
+      }
     }
     > .content {
       padding: 4em 5em;

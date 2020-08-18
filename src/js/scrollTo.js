@@ -17,4 +17,5 @@ function handleScroll(e) {
     behavior: "smooth"
   });
 }
+
 export default handleScroll;

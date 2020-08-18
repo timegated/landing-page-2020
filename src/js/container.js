@@ -12,7 +12,7 @@ const container = {
   projects: [
     {
       title: "WoW Class Tracker",
-      summary: "App designed to help players keep track of their items",
+      summary: "Web application built with react to help people who play WoW keep track of their items",
       image: wowClassTracker,
       github: "https://github.com/timegated/class-tracker",
       stack: ["fab fa-react", "fab fa-node-js", "fas fa-database"],
@@ -49,7 +49,7 @@ const container = {
       ${this.projects.map(function (project) {
           return `
           <section>
-             <a href="${project.github}" class="image"><img src="${project.image}" alt="${project.title}" data-position="center center"></a>
+             <a href="${project.github}" class="image" target="_blank" rel="noopener noreferrer"><img src="${project.image}" alt="${project.title}" data-position="center center"></a>
             <div class="content">
               <div class="inner">
                 <h2>${project.title}</h2>
