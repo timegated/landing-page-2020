@@ -2,8 +2,6 @@ import wowClassTracker from '../images/wowclasstracker.png';
 import shoppingList from '../images/shlistjpg.png';
 import gemStudy from '../images/gem-study.png';
 
-console.log(wowClassTracker)
-
 const container = {
   firstName: 'Daniel',
   lastName: 'Beccaria',
@@ -16,7 +14,7 @@ const container = {
       image: wowClassTracker,
       github: "https://github.com/timegated/class-tracker",
       stack: ["fab fa-react", "fab fa-node-js", "fas fa-database"],
-      deployed: "https://wowclasstracker.com/",
+      deployed: "https://wowclasstracker.herokuapp.com/login",
       year: 2020
     },
     {
