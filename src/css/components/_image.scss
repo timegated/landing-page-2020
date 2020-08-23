@@ -45,5 +45,11 @@
       width: 100%;
     }
   }
+
+  &.profile-image {
+    @include breakpoint('<=large') {
+      display: none;
+    }
+  }
 }
 
