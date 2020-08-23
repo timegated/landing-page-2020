@@ -1,6 +1,6 @@
 import wowClassTracker from '../images/wowclasstracker.png';
 import shoppingList from '../images/shlistjpg.png';
-import eventCalc from '../images/eventcalc.png';
+import gemStudy from '../images/gem-study.png';
 
 console.log(wowClassTracker)
 
@@ -20,13 +20,13 @@ const container = {
       year: 2020
     },
     {
-      title: "Calculator",
-      summary: "Calculator project showcasing event delegation",
-      image: eventCalc,
-      github: "https://github.com/timegated/event-delecalculator",
-      stack: ["fab fa-html5", "fab fa-css3-alt"],
-      deployed: "https://timegated.github.io/event-delecalculator/calc.html",
-      year: 2019
+      title: "Gem Study Tools",
+      summary: "An interactive way for people studying gemology to store information they find about gem stones",
+      image: gemStudy,
+      github: "https://github.com/timegated/gem-study-tool",
+      stack: ["fab fa-react", "fab fa-node-js", "fas fa-database"],
+      deployed: "https://gem-study-tools.herokuapp.com/",
+      year: 2020
     },
     {
       title: "Shopping List",
