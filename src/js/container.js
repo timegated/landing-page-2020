@@ -12,7 +12,7 @@ const container = {
   projects: [
     {
       title: "WoW Class Tracker",
-      summary: "Web application built with react to help people who play WoW keep track of their items",
+      summary: "My first attempt at creating a full-stack app with React/NodeJS. Sought to create a streamlined way for groups of players to keep track of higher profile items in game.",
       image: wowClassTracker,
       github: "https://github.com/timegated/class-tracker",
       stack: ["fab fa-react", "fab fa-node-js", "fas fa-database"],

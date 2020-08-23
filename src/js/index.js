@@ -2,7 +2,8 @@ import typeEffectOnScreen from "./typeEffect.js";
 import container from "./container.js";
 import handleScroll from "./scrollTo.js";
 import resume from "../images/DJBResume_WebDev.pdf";
-import "../css/master.scss";
+import "../css/main.scss";
+
 console.log(resume)
 const buttons = Array.from(container.targets.sideBarButton);
 
