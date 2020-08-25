@@ -1,6 +1,7 @@
 import wowClassTracker from '../images/wowclasstracker.png';
 import shoppingList from '../images/shlistjpg.png';
 import gemStudy from '../images/gem-study.png';
+import bamazon from '../images/bamazonsql.png';
 
 const container = {
   firstName: 'Daniel',
@@ -19,7 +20,7 @@ const container = {
     },
     {
       title: "Gem Study Tools",
-      summary: "An interactive way for people studying gemology to store information they find about gem stones",
+      summary: "An interactive way for people studying gemology to store information they find about gem stones.",
       image: gemStudy,
       github: "https://github.com/timegated/gem-study-tool",
       stack: ["fab fa-react", "fab fa-node-js", "fas fa-database"],
@@ -27,12 +28,12 @@ const container = {
       year: 2020
     },
     {
-      title: "Shopping List",
-      summary: "Learning tool for fullstack applications built with react and mongodb",
-      image: shoppingList,
-      github: "https://github.com/timegated/shopping-list-hooks",
-      stack: ["fab fa-react", "fab fa-node-js", "fas fa-database"],
-      deployed: "https://dry-basin-38264.herokuapp.com/",
+      title: "Bamazon SQL",
+      summary: "A command line interface that leverages SQL for managing a mock inventory.",
+      image: bamazon,
+      github: "https://github.com/timegated/bamazonsql",
+      stack: ["fas fa-database"],
+      deployed: "https://github.com/timegated/bamazonsql",
       year: 2020
     }
   ],
