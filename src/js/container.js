@@ -41,6 +41,7 @@ const container = {
     projectElement: document.getElementById('work'),
     profileElement: document.getElementById('profile'),
     typedIntroElement: document.getElementById('typedIntro'),
+    introContainer: document.getElementById('intro'),
     navBar: document.querySelector('.navbar'),
     sideBarButton: document.querySelectorAll('#button'),
   },
