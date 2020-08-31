@@ -1,15 +1,45 @@
-$bg: #72A0C1;
-$black: #000;
-$bg-cta: lighten(#72A0C1, 5);
-$bg-light: lighten(#72A0C1, 10);
-$bg-dark: darken(#72A0C1, 10);
-$cornflower: #8095FF;
-$cornflower-alt: darken(#8095FF, 5);
-$text-color: #2c2c2c;
-$text-neutral: #EFEFEF;
-$text-color-primary: red;
 
-// Fonts
+$misc: (
+  z-index-base: 10000,
+  max-features: 20,
+  max-sidebar-links: 20
+);
 
-$font-family-1: 'Oswald', sans-serif;
-$font-family-2: 'Roboto', sans-serif;
+$duration: (
+  transition: 0.2s,
+  activation: 1s
+);
+
+$size: (
+  border-radius: 0.25em,
+  border-width: 1px,
+  element-height: 2.75em,
+  element-margin: 2em,
+  sidebar-width: 18em,
+  sidebar-height: 3.5em,
+  inner-width: 75em
+);
+
+$font: (
+  family: ('Oswald', sans-serif),
+  family-2: ('Roboto', sans-serif),
+  weight: normal,
+  weight-bold: bold,
+  kerning-alt: 0.25em
+);
+
+$palette: (
+  bg:					#2c2c2c,
+  bg-alt:				rgba(255, 255, 255, 0.5),
+  fg:					rgba(255,255,255,0.55),
+  fg-bold:			#ffffff,
+  fg-light:			rgba(255,255,255,0.35),
+  border:				rgba(255,255,255,0.15),
+  border-bg:			rgba(255,255,255,0.05),
+  accent1:			#5e42a6,
+  accent1-alt:		darken(#5e42a6, 10),
+  accent2:			#5052b5,
+  accent2-alt:		darken(#5052b5, 10),
+  accent3:			#b74e91,
+  accent3-alt:		darken(#b74e91, 10)
+)

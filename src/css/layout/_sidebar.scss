@@ -1,6 +1,6 @@
 #sidebar {
   padding: 2.5rem 2.5rem;
-  background: lighten($text-color, 4);
+  background: _palette(border-bg);
   cursor: default;
   height: 100vh;
   left: 0;
@@ -9,18 +9,22 @@
   position: fixed;
   text-align: right;
   top: 0;
-  width: 18em;
-  z-index: 999;
+  width: _size(sidebar-width);
+  z-index: _misc(z-index-base);
 
   > .inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transform: translateY(0);
-    transition: opacity 0.6s ease;
+		@include vendor('display', 'flex');
+		@include vendor('flex-direction', 'column');
+		@include vendor('justify-content','center');
+		@include vendor('transform','translateY(0)');
+		@include vendor('transition', ('opacity #{_duration(activation)} ease'));
     min-height: 100%;
     opacity: 1;
-    width: 100%;
+		width: 100%;
+		
+		body.is-ie & {
+			height: 100%;
+		}
   }
   nav {
     > ul {
@@ -28,9 +32,9 @@
       padding: 0;
 
       > li {
-        transform: translateY(0);
-        transition: opacity calc(1s * 0.15) ease;
-        transform: calc(1s * 0.75) ease;
+        @include vendor('transform','translateY(0)');
+				@include vendor('transition',('opacity #{_duration(activation) * 0.15} ease',
+				'transform #{_duration(activation) * 0.75} ease'));
         margin: 1.5em 0 0 0;
         opacity: 1;
         padding: 0;
@@ -38,30 +42,30 @@
 
         &:first-child {
           margin: 0;
-        }
+				}
+				@for $i from 1 through _misc(max-sidebar-links) {
+					&:nth-child(#{$i}) {
+						@include vendor('transition-delay', '#{(_duration(activation) * 0.2 * $i) + (_duration(activation) * 0.25)}');
+					}
+				}
       }
     }
     a {
-      transition: color 0.2s ease;
-			border: 2px solid #72A0C1;
-			border-radius: 3em;
-      color: #efefef;
+      @include vendor('transition', 'color #{_duration(transition)} ease');
+			border: 0;
+      color: _palette(fg-light);
       display: block;
       font-size: 0.9em;
-      font-weight: bold;
-      letter-spacing: 0.2em;
+      font-weight: _font(weight-bold);
+      letter-spacing: _font(kerning-alt);
       line-height: .75;
       outline: 0;
       padding: 1em;
       position: relative;
       text-decoration: none;
 			text-transform: uppercase;
-			font-family: $font-family-2;
+			font-family: _font(family-2);
 
-      span {
-				text-transform: lowercase;
-				letter-spacing: 0.1em;
-			}
 				&:before,
 				&:after {
 					border-radius: 0.2em;
@@ -79,14 +83,15 @@
 				}
 
 				&:after {
-          background-image: linear-gradient(to right, red, pink);
+					@include vendor('background-image','linear-gradient(to right, #{_palette(accent1)}, #{_palette(accent3)})');
+					@include vendor('transition', 'max-width #{_duration(transition)} ease');
           transition: max-width 0.2s ease;
 					max-width: 0;
 				}
 
 				&:hover {
 					color:#000000;
-					background: $cornflower;
+					background: _palette(accent3);
 				}
 
 				&.active {
@@ -100,9 +105,9 @@
 	}
 
 		@include breakpoint('<=large') {
-			height: 3.5em;
+			height: _size(sidebar-height);
 			left: 0;
-			line-height: 3.5em;
+			line-height: _size(sidebar-height);
 			overflow: hidden;
 			padding: 0;
 			text-align: center;
@@ -110,8 +115,8 @@
 			width: 100%;
 
 			> .inner {
-				flex-direction: row;
-        align-items: stretch;
+				@include vendor('display','row');
+				@include vendor('align-items','stretch');
 				height: inherit;
 				line-height: inherit;
 			}
@@ -121,7 +126,7 @@
 				line-height: inherit;
 
 				ul {
-					display: flex;
+					@include vendor('display','flex');
 					height: inherit;
 					line-height: inherit;
 					margin: 0;
@@ -139,7 +144,12 @@
 					height: inherit;
 					line-height: inherit;
 					padding: 0;
-					border: none
+					border: none;
+
+					&:after {
+						background-image: none;
+						background-color: _palette(accent3);
+					}
 				}
       }  
     }

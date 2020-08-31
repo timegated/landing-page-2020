@@ -32,7 +32,7 @@
       }
       &:hover, 
       &:active {
-        border: 5px solid $bg;
+        border: 5px solid _palette(bg);
         transition: all 0.2s ease;
       }
     }

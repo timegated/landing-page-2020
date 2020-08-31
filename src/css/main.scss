@@ -1,7 +1,10 @@
-@import 'libs/breakpoints';
 @import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/vendor';
+@import 'libs/html-grid';
+@import 'libs/breakpoints';
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@500&display=swap');
-@import url('../../node_modules/animate.css/animate.min.css');
 
 // Breakpoints
   @include breakpoints((

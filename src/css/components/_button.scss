@@ -11,7 +11,7 @@ button,
   border: solid 1px black !important;
   border-color: rgba(255, 255, 255,0.05) !important;
   border-radius: 3em;
-  color: $text-color !important;
+  color: _palette(fg-bold) !important;
   cursor: pointer;
   display: inline-block;
   font-size: 0.6em;
@@ -66,13 +66,13 @@ button,
       margin-bottom: 0.5em;
 		}
     &.cta {
-      background: $bg-cta;
-      color: $bg-dark;
+      background: _palette(fg-bold);
+      color: _palette(bg);
     }
 
 		&.primary {
 			background-color: #ffffff;
-			color: $bg-dark !important;
+			color: _palette(bg) !important;
 
 			&:after {
 				display: none;
@@ -87,9 +87,7 @@ button,
 		}
 
 		&:hover {
-			border-color: $text-color !important;
-      background: $cornflower !important;
-      color: $text-neutral !important;
+			border-color: _palette(fg) !important;
 			&:after {
 				opacity: 0.05;
         transform-origin: scale(1);

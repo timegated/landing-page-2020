@@ -2,12 +2,12 @@
   border-bottom: none;
   position: relative;
   font-size: 1.5em;
-  color: $black;
+  color: _palette(bg);
   line-height: 2.5em;
   margin: 0.5em;
 
   & .icon-dark {
-    color: $bg-dark;
+    color: _palette(bg-alt);
     font-size: 2.5em;
     line-height: 2.5em;
     margin: 0.5em;
