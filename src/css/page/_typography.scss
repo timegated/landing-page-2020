@@ -1,7 +1,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: _palette(fg);
+		color: _palette(border-bg);
 		font-family: _font(family);
 		font-size: 16.5pt;
 		font-weight: normal;
@@ -61,21 +61,15 @@
 
 	h1 {
 		font-size: 3.5em;
+		margin: 0 0 0 1rem;
 		&.major {
-			margin: 0 0 (2em * 0.65) 0;
+			color: _palette(accent1);
+			margin: 0 0 (2em * 0.65);
 			position: relative;
 			padding-bottom: 0.35em;
-
-			&:after {
-        background-image: linear-gradient(to right, #5e42a6, #b74e91) ;
-        transition: max-width 1s ease;
-				border-radius: 0.2em;
-				bottom: 0;
-				content: '';
-				height: 0.05em;
-				position: absolute;
-				right: 0;
-				width: 100%;
+			background: rgba(255, 255, 255,.8);
+			span {
+				margin: 0 0 0 1rem;
 			}
 		}
 	}

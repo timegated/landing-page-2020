@@ -1,14 +1,18 @@
 .features {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 1em;
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-
+	@include vendor('display','flex');
+	@include vendor('flex-wrap','wrap');
+  border-radius: _size(border-radius);
+  background: _palette(border-bg);
+	border: 1px solid _palette(border);
+	margin: 0 0 _size(element-margin) 0;
+	box-shadow: 1px 2px 3px 0.8px _palette(p-color1);
+	p {
+		color: _palette(p-color1);
+	}
   section {
-    padding: 3em 3em 0.5em 4em;
+    @include padding(3em, 3em, (0.5em, 0, 0, 4em));
     width: 50%;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid _palette(p-color1);
     position: relative;
 
     &:nth-child(-n + 2) {
@@ -16,8 +20,12 @@
     }
 
     &:nth-child(2n) {
-      border-left: 1px solid rgba(255, 255, 255, 0.5);
-    }
+      border-left: 1px solid rgba(87, 69, 69, 0.5);
+		}
+		
+		p, i {
+			color: _palette(p-color1);
+		}
   }
   @include breakpoint('<=medium') {
 			display: block;

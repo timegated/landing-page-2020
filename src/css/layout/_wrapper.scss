@@ -11,6 +11,9 @@
     > .wrapper {
       > .inner {
         margin: 0 auto;
+        p {
+          color: _palette(p-color1);
+        }
       }
     }
   }

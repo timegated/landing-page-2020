@@ -4,7 +4,7 @@ const { firstName, lastName } = container;
 
 let i = 0;
 let isTag;
-let message = `<h1 class="typed-intro__fullname"><span>${firstName}</span>${' '}<span>${lastName}</span></h1>`;
+let message = `<h1 class="major"><span>${firstName}</span>${' '}<span>${lastName}</span></h1>`;
 
 const typeEffectOnScreen = () => {
     const character = message.slice(0, i += 1);

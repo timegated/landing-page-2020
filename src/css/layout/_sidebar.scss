@@ -35,7 +35,7 @@
         @include vendor('transform','translateY(0)');
 				@include vendor('transition',('opacity #{_duration(activation) * 0.15} ease',
 				'transform #{_duration(activation) * 0.75} ease'));
-        margin: 1.5em 0 0 0;
+        margin: 1em 0 0 0;
         opacity: 1;
         padding: 0;
         position: relative;
@@ -51,7 +51,7 @@
       }
     }
     a {
-      @include vendor('transition', 'color #{_duration(transition)} ease');
+      @include vendor('transition', 'all #{_duration(transition)} ease');
 			border: 0;
       color: _palette(accent1);
       display: block;
@@ -83,7 +83,7 @@
 
 				&:after {
 					@include vendor('background-image','linear-gradient(to right, #{_palette(accent1)}, #{_palette(accent3)})');
-					@include vendor('transition', 'max-width #{_duration(transition)} ease');
+					@include vendor('transition', 'all #{_duration(transition)} ease');
           transition: max-width 0.2s ease;
 					max-width: 0;
 				}

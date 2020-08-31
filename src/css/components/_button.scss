@@ -11,7 +11,6 @@ button,
   border: solid 1px black !important;
   border-color: rgba(255, 255, 255,0.05) !important;
   border-radius: 3em;
-  color: _palette(fg-bold) !important;
   cursor: pointer;
   display: inline-block;
   font-size: 0.6em;
@@ -71,9 +70,8 @@ button,
     }
 
 		&.primary {
-			background-color: #ffffff;
-			color: _palette(bg) !important;
-
+      background-color: #ffffff;
+      color: _palette(accent1);
 			&:after {
 				display: none;
 			}

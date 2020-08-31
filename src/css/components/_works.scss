@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     min-height: 22.5rem;
-    border: 1px solid #000;
+    margin: 1.5rem;
 
     > .image {
       background-position: center center;
@@ -30,11 +30,6 @@
         top: 0;
         width: 100%;
       }
-      &:hover, 
-      &:active {
-        border: 5px solid _palette(bg);
-        transition: all 0.2s ease;
-      }
     }
     > .content {
       padding: 4em 5em;
@@ -49,6 +44,10 @@
         transition: opacity 0.5s ease;
         transform: 0.5s ease;
         opacity: 1;
+
+        p {
+          color: _palette(p-color1);
+        }
       }
     }
     
