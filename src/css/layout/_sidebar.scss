@@ -78,7 +78,7 @@
 				}
 
 				&:before {
-					background: #efefef;
+					background: _palette(accent3);
 				}
 
 				&:after {
@@ -113,7 +113,7 @@
 			width: 100%;
 
 			> .inner {
-				@include vendor('display','row');
+				@include vendor('flex-direction','row');
 				@include vendor('align-items','stretch');
 				height: inherit;
 				line-height: inherit;

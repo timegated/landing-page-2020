@@ -49,7 +49,8 @@ button,
   }
 
   	&.fit {
-			width: 100%;
+      width: 100%;
+      margin: 0.5rem 0 0 0;
 		}
 
 		&.small {
@@ -85,7 +86,7 @@ button,
 		}
 
 		&:hover {
-			border-color: _palette(fg) !important;
+			border-color: _palette(accent3) !important;
 			&:after {
 				opacity: 0.05;
         transform-origin: scale(1);

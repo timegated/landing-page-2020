@@ -60,8 +60,12 @@ const container = {
                   <i class="icon icon-dark ${icon}"></i>
                  `
       }).join('')
-          : console.log("nothing here yet")}
-                            <a href="${project.deployed}" target="_blank" class="button primary large">Live</a>
+        : console.log("nothing here yet")}
+                            <div class="inner-button__group">
+                            <a href="${project.github}" target="_blank" class="button primary fit large">Github</a>
+                            <a href="${project.deployed}" target="_blank" class="button primary fit large">Live</a>
+                            </div>
+                            
 
               </div>
             </div>

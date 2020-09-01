@@ -71,12 +71,12 @@
 
     @include breakpoint('<=small') {
       > .image {
-        height: 50%;
+        height: 75%;
         min-height: 15em;
       }
 
       > .content {
-        padding: 3em 2em;
+        padding: 1em 2em;
       }
     }
   }
