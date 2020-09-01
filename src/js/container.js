@@ -15,7 +15,7 @@ const container = {
       image: wowClassTracker,
       github: "https://github.com/timegated/class-tracker",
       stack: ["fab fa-react", "fab fa-node-js", "fas fa-database"],
-      deployed: "https://wowclasstracker.herokuapp.com/login",
+      deployed: "https://trusting-wescoff-a0054c.netlify.app/about",
       year: 2020
     },
     {
