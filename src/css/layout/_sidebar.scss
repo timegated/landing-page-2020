@@ -32,9 +32,6 @@
       padding: 0;
 
       > li {
-        @include vendor('transform','translateY(0)');
-				@include vendor('transition',('opacity #{_duration(activation) * 0.15} ease',
-				'transform #{_duration(activation) * 0.75} ease'));
         margin: 1em 0 0 0;
         opacity: 1;
         padding: 0;
@@ -43,16 +40,9 @@
         &:first-child {
           margin: 0;
 				}
-				@for $i from 1 through _misc(max-sidebar-links) {
-					&:nth-child(#{$i}) {
-						@include vendor('transition-delay', '#{(_duration(activation) * 0.2 * $i) + (_duration(activation) * 0.25)}');
-					}
-				}
       }
     }
     a {
-      @include vendor('transition', 'all #{_duration(transition)} ease');
-			border: 0;
       color: _palette(accent1);
       display: block;
       font-size: 0.9em;
@@ -65,31 +55,10 @@
       text-decoration: none;
 			text-transform: uppercase;
 			font-family: _font(family-2);
-
-				&:before,
-				&:after {
-					border-radius: 0.2em;
-					bottom: 0;
-					content: '';
-					height: 0.2em;
-					position: absolute;
-					right: 0;
-					width: 100%;
-				}
-
-				&:before {
-					background: _palette(accent3);
-				}
-
-				&:after {
-					@include vendor('background-image','linear-gradient(to right, #{_palette(accent1)}, #{_palette(accent3)})');
-					@include vendor('transition', 'all #{_duration(transition)} ease');
-          transition: max-width 0.2s ease;
-					max-width: 0;
-				}
-
+			border-bottom: 1px solid _palette(accent3-alt);
+			
 				&:hover {
-					color:#000000;
+					color:_palette(fg-bold);
 				}
 
 				&.active {

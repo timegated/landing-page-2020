@@ -71,7 +71,7 @@ button,
     }
 
 		&.primary {
-      background-color: #ffffff;
+      background-color: _palette(bg-alt);
       color: _palette(accent1);
 			&:after {
 				display: none;

@@ -2,29 +2,27 @@
 	@include vendor('display','flex');
 	@include vendor('flex-wrap','wrap');
   border-radius: _size(border-radius);
-  background: _palette(border-bg);
+  // background: _palette(border-bg);
 	border: 1px solid _palette(border);
 	margin: 0 0 _size(element-margin) 0;
-	box-shadow: 1px 2px 3px 0.8px _palette(p-color1);
-	p {
-		color: _palette(p-color1);
-	}
+	box-shadow: 1px 2px 3px 1px _palette(bg);
+
   section {
     @include padding(3em, 3em, (0.5em, 0, 0, 4em));
     width: 50%;
-    border-top: 1px solid _palette(p-color1);
-    position: relative;
+		box-shadow: 1px 1px 1px 0.8px _palette(bg);
+		position: relative;
 
     &:nth-child(-n + 2) {
-      border-top-width: 0;
+      border-top-width: 1px;
     }
 
     &:nth-child(2n) {
-      border-left: 1px solid rgba(87, 69, 69, 0.5);
+			box-shadow: 1px 1px 1px 0.8px _palette(bg);
 		}
 		
 		p, i {
-			color: _palette(p-color1);
+			color: _palette(bg);
 		}
   }
   @include breakpoint('<=medium') {
@@ -44,11 +42,6 @@
 		@include breakpoint('<=small') {
 			section {
         padding: 2em 1.5em 0.5em 4em;
-
-				.icon {
-					left: 1.5em;
-					top: 2em;
-				}
 			}
 		}
 

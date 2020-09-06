@@ -29,18 +29,17 @@ $font: (
 );
 
 $palette: (
-  bg:					#EBEBEB,
-  bg-alt:				rgba(255, 255, 255, 0.5),
+  bg:					#243B53,
+  bg-alt:				hsl(212, 33%, 89%),
   fg:					rgba(255,255,255,0.55),
-  fg-bold:			#ffffff,
+  fg-bold:			#F0F4F8,
   fg-light:			rgba(255,255,255,0.35),
   border:				rgba(255,255,255,0.15),
-  border-bg:			rgba(255,255,255,0.05),
-  accent1:			#663399,
+  border-bg:			#829AB1,
+  accent1:			#102A43,
   accent1-alt:		darken(#5e42a6, 10),
   accent2:			#5052b5,
   accent2-alt:		darken(#5052b5, 10),
   accent3:			#b74e91,
   accent3-alt:		darken(#b74e91, 10),
-  p-color1: #000000
-)
+);

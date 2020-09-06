@@ -35,6 +35,15 @@ const container = {
       stack: ["fas fa-database"],
       deployed: "https://github.com/timegated/bamazonsql",
       year: 2020
+    },
+    {
+      title: "Bamazon SQL",
+      summary: "A command line interface that leverages SQL for managing a mock inventory.",
+      image: bamazon,
+      github: "https://github.com/timegated/bamazonsql",
+      stack: ["fas fa-database"],
+      deployed: "https://github.com/timegated/bamazonsql",
+      year: 2020
     }
   ],
   targets: {
@@ -50,7 +59,7 @@ const container = {
       ${this.projects.map(function (project) {
       return `
           <section>
-             <a href="${project.github}" class="image" target="_blank" rel="noopener noreferrer"><img src="${project.image}" alt="${project.title}" data-position="center center"></a>
+             <a href="${project.github}" class="image" target="_blank" rel="noopener noreferrer"><img src="${project.image}" alt="${project.title}"></a>
             <div class="content">
               <div class="inner">
                 <h2>${project.title}</h2>
@@ -62,11 +71,9 @@ const container = {
       }).join('')
         : console.log("nothing here yet")}
                             <div class="inner-button__group">
-                            <a href="${project.github}" target="_blank" class="button primary fit large">Github</a>
-                            <a href="${project.deployed}" target="_blank" class="button primary fit large">Live</a>
+                            <a href="${project.github}" target="_blank" class="button primary">Github</a>
+                            <a href="${project.deployed}" target="_blank" class="button primary">Live</a>
                             </div>
-                            
-
               </div>
             </div>
           </section>
