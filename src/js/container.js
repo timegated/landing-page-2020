@@ -1,7 +1,7 @@
 import wowClassTracker from '../images/wowclasstracker.png';
-import shoppingList from '../images/shlistjpg.png';
 import gemStudy from '../images/gem-study.png';
 import bamazon from '../images/bamazonsql.png';
+import githubfinder from '../images/github-finder.png';
 
 const container = {
   firstName: 'Daniel',
@@ -28,12 +28,12 @@ const container = {
       year: 2020
     },
     {
-      title: "Bamazon SQL",
-      summary: "A command line interface that leverages SQL for managing a mock inventory.",
-      image: bamazon,
-      github: "https://github.com/timegated/bamazonsql",
-      stack: ["fas fa-database"],
-      deployed: "https://github.com/timegated/bamazonsql",
+      title: "Github Finder",
+      summary: "A React App designed to search for github profiles.",
+      image: githubfinder,
+      github: "https://github.com/timegated/github-finder-react-ftb",
+      stack: ["fab fa-react"],
+      deployed: "https://github-repo-finder2020.netlify.app/",
       year: 2020
     },
     {
