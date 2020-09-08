@@ -2,6 +2,7 @@ import wowClassTracker from '../images/wowclasstracker.png';
 import gemStudy from '../images/gem-study.png';
 import bamazon from '../images/bamazonsql.png';
 import githubfinder from '../images/github-finder.png';
+import tictactoe from '../images/tic-tac-toe.PNG';
 
 const container = {
   firstName: 'Daniel',
@@ -9,6 +10,15 @@ const container = {
   area: 'Philadelphia, PA',
   interests: ['javascript', 'reactjs', 'nodejs'],
   projects: [
+    {
+      title: "Tic-Tac-Toe",
+      summary: "Tic-tac-toe in the browser. Built with Javascript modules and Sass, also includes the option to play against an AI of sorts via the minimax algorithm",
+      image: tictactoe,
+      github: "https://github.com/timegated/tic-tac-toe",
+      stack: ["fab fa-html5", "fab fa-css3", "fab fa-js"],
+      deployed: "https://modest-kowalevski-a36e52.netlify.app/",
+      year: 2020
+    },
     {
       title: "WoW Class Tracker",
       summary: "My first attempt at creating a full-stack app with React/NodeJS. Sought to create a streamlined way for groups of players to keep track of higher profile items in game.",
