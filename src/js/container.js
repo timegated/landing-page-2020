@@ -21,7 +21,7 @@ const container = {
     },
     {
       title: "WoW Class Tracker",
-      summary: "My first attempt at creating a full-stack app with React/NodeJS. Sought to create a streamlined way for groups of players to keep track of higher profile items in game.",
+      summary: "A full-stack app created with React/NodeJS. Sought to create a streamlined way for groups of players to keep track of higher profile items in game.",
       image: wowClassTracker,
       github: "https://github.com/timegated/class-tracker",
       stack: ["fab fa-react", "fab fa-node-js", "fas fa-database"],
@@ -81,8 +81,8 @@ const container = {
       }).join('')
         : console.log("nothing here yet")}
                             <div class="inner-button__group">
-                            <a href="${project.github}" target="_blank" class="button primary">Github</a>
-                            <a href="${project.deployed}" target="_blank" class="button primary">Live</a>
+                            <a href="${project.github}" target="_blank" rel="noopener noreferrer"  class="button primary">Github</a>
+                            <a href="${project.deployed}" target="_blank" rel="noopener noreferrer" class="button primary">Live</a>
                             </div>
               </div>
             </div>
