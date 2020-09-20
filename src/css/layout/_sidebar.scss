@@ -1,6 +1,6 @@
 #sidebar {
   padding: 2.5rem 2.5rem;
-  background: _palette(border-bg);
+  background: lighten(_palette(border-bg), 8);
   cursor: default;
   height: 100vh;
   left: 0;

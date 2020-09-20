@@ -25,7 +25,7 @@
 		}
 
 		&.style1 {
-			background-color: _palette(bg-alt);
+			background-color: _palette(fg-light);
 		}
 
 		&.style1-alt {
@@ -36,6 +36,10 @@
 			background-color: _palette(accent2);
 		}
 		
+		&.style3 {
+			background-color: darken(_palette(bg-alt), 20);
+		}
+
 		&.fullscreen {
 			display: flex;
       flex-direction: column;			

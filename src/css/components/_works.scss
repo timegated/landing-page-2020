@@ -1,18 +1,19 @@
 .works {
   > section {
-    display: flex;
-    flex-direction: row;
-    min-height: 22.5rem;
-    margin: 0.5em 0 0.5rem 0;
-
+    @include vendor('display','flex');
+    @include vendor('flex-direction','row');
+    width: 100%;
+    min-height: 20.5rem;
+    margin: auto;
+    padding: 1.5rem;
+    box-shadow: 3px 3px 3px _palette(bg);
     > .image {
       background-position: center center;
       background-size: cover;
       border-radius: 0;
       display: block;
       position: relative;
-      width: 100em;
-
+      width: 100%;
       img {
       display: block;
       width: 100%;
@@ -28,15 +29,16 @@
         opacity: 0;
         top: 0;
         width: 100%;
+        height: 100%;
       }
     }
     > .content {
-      padding: 0 2em 5em 2em;
+      padding: 1em 2em 5em 2em;
       @include vendor('display','flex');
       @include vendor('flex-direction','column');
       @include vendor('justify-content','center');
       @include vendor('align-content','center');
-      width: calc(100em - 25em);
+      width: #{_size(inner-width) - 25em};
       -ms-flex: 1;
 
       > .inner {
@@ -46,11 +48,13 @@
         opacity: 1;
 
         p {
-          color: _palette(p-color1);
+          color: _palette(bg);
           margin: 1em 0 1em 0;
+          max-width: 20em;
         }
         i {
           margin: 0 1em 1em 0;
+          color: _palette(bg);
         }
       }
     }
@@ -68,7 +72,7 @@
 
       > .image {
         width: 100%;
-        height: 50vh;
+        height: 100vh;
       }
       > .content {
         width: 100%;
@@ -77,8 +81,8 @@
 
     @include breakpoint('<=small') {
       > .image {
-        height: 75%;
-        min-height: 20em;
+        height: 100%;
+        width: 100%;
       }
 
       > .content {
