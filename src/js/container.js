@@ -1,6 +1,6 @@
 import wowClassTracker from '../images/wowclasstracker.png';
 import gemStudy from '../images/gem-study.png';
-import bamazon from '../images/bamazonsql.png';
+import pugWeb from '../images/pugweb.PNG';
 import githubfinder from '../images/github-finder.png';
 import tictactoe from '../images/tic-tac-toe.PNG';
 
@@ -11,12 +11,12 @@ const container = {
   interests: ['javascript', 'reactjs', 'nodejs'],
   projects: [
     {
-      title: "Tic-Tac-Toe",
-      summary: "Tic-tac-toe in the browser. Built with Javascript modules and Sass, also includes the option to play against an AI of sorts via the minimax algorithm",
-      image: tictactoe,
-      github: "https://github.com/timegated/tic-tac-toe",
+      title: "Pug Sports",
+      summary: "A marketing I created for a mobile application designed to bring people together to play their chosen sport.",
+      image: pugWeb,
+      github: "https://github.com/timegated/johnfischer14.github.io",
       stack: ["fab fa-html5", "fab fa-css3", "fab fa-js"],
-      deployed: "https://modest-kowalevski-a36e52.netlify.app/",
+      deployed: "https://hardcore-knuth-2b2ac0.netlify.app/",
       year: 2020
     },
     {
@@ -47,14 +47,14 @@ const container = {
       year: 2020
     },
     {
-      title: "Bamazon SQL",
-      summary: "A command line interface that leverages SQL for managing a mock inventory.",
-      image: bamazon,
-      github: "https://github.com/timegated/bamazonsql",
-      stack: ["fas fa-database"],
-      deployed: "https://github.com/timegated/bamazonsql",
+      title: "Tic-Tac-Toe",
+      summary: "Tic-tac-toe in the browser. Built with Javascript modules and Sass, also includes the option to play against an AI of sorts via the minimax algorithm",
+      image: tictactoe,
+      github: "https://github.com/timegated/tic-tac-toe",
+      stack: ["fab fa-html5", "fab fa-css3", "fab fa-js"],
+      deployed: "https://modest-kowalevski-a36e52.netlify.app/",
       year: 2020
-    }
+    },
   ],
   targets: {
     projectElement: document.getElementById('work'),
