@@ -1,4 +1,4 @@
-import container from './container.js';
+import container from '../containers/container.js';
 
 const { firstName, lastName } = container;
 

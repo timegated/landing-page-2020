@@ -1,8 +1,8 @@
-import wowClassTracker from '../images/wowclasstracker.png';
-import gemStudy from '../images/gem-study.png';
-import pugWeb from '../images/pugweb.PNG';
-import githubfinder from '../images/github-finder.png';
-import tictactoe from '../images/tic-tac-toe.PNG';
+import wowClassTracker from '../../images/wowclasstracker.png';
+import gemStudy from '../../images/gem-study.png';
+import pugWeb from '../../images/pugweb.PNG';
+import githubfinder from '../../images/github-finder.png';
+import tictactoe from '../../images/tic-tac-toe.PNG';
 
 const container = {
   firstName: 'Daniel',

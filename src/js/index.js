@@ -1,6 +1,7 @@
-import typeEffectOnScreen from "./typeEffect.js";
-import container from "./container.js";
-import handleScroll from "./scrollTo.js";
+import typeEffectOnScreen from "./effects/typeEffect.js";
+import container from "./containers/container.js";
+import handleScroll from "./effects/scrollTo.js";
+import { observer } from "../js/lazy/observer.js";
 import resume from "../images/DJBResume_WebDev.pdf";
 import introSVG from '../images/intro.svg';
 import "../css/main.scss";
@@ -8,10 +9,6 @@ import "../css/main.scss";
 const buttons = Array.from(container.targets.sideBarButton);
 
 buttons[2].firstElementChild.href = resume;
-
-handleScroll;
-
-typeEffectOnScreen();
 
 container.targets.introContainer.style = `
   background-attachment: fixed;
@@ -21,4 +18,7 @@ container.targets.introContainer.style = `
   background-size: center;
 `
 
+observer.observe(container.targets.projectElement);
+handleScroll;
+typeEffectOnScreen();
 container.init();
