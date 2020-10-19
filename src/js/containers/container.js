@@ -61,7 +61,7 @@ const container = {
     profileElement: document.getElementById('profile'),
     typedIntroElement: document.getElementById('typedIntro'),
     introContainer: document.getElementById('intro'),
-    navBar: document.querySelector('.navbar'),
+    navBar: document.querySelector('#sidebar'),
     sideBarButton: document.querySelectorAll('#button'),
   },
   generateProjects() {
