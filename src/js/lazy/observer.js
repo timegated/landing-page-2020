@@ -14,7 +14,7 @@ const logObserver = (entries, observer) => {
       if (currentRatio > previousRatio && isIntersecting) {
         console.log('Scrolling down leave')
       } else {
-        console.log('Scrolling down leave')
+        console.log('Scrolling down in the else clause')
       }
     } else if (currentY > previousY && isIntersecting) {
       if (currentRatio < previousRatio) {

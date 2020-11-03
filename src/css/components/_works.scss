@@ -1,4 +1,4 @@
-.works {
+#work {
   > section {
     @include vendor('display','flex');
     @include vendor('flex-direction','row');
@@ -6,14 +6,15 @@
     min-height: 20.5rem;
     margin: auto;
     padding: 1.5rem;
-    box-shadow: 3px 3px 3px _palette(bg);
-    > .image {
+
+ .image {
       background-position: center center;
       background-size: cover;
       border-radius: 0;
       display: block;
       position: relative;
       width: 100%;
+      
       img {
       display: block;
       width: 100%;
