@@ -1,23 +1,23 @@
 import wowClassTracker from '../../images/wowclasstracker.png';
 import gemStudy from '../../images/gem-study.png';
-import pugWeb from '../../images/pugweb.PNG';
+import tenth from '../../images/tenth.png';
 import githubfinder from '../../images/github-finder.png';
 import tictactoe from '../../images/tic-tac-toe.PNG';
 
 const container = {
   firstName: 'Daniel',
   lastName: 'Beccaria',
-  area: 'Philadelphia, PA',
+  area: 'Los Angeles, CA',
   interests: ['javascript', 'reactjs', 'nodejs'],
   projects: [
     {
-      title: "Pug Sports",
-      summary: "A marketing I created for a mobile application designed to bring people together to play their chosen sport.",
-      image: pugWeb,
-      github: "https://github.com/timegated/johnfischer14.github.io",
+      title: "10th World Website",
+      summary: "A marketing I created for a SaaS product that connects people to servers that can run Valheim.",
+      image: tenth,
+      github: "https://github.com/10thworldservers/10thworld-website",
       stack: ["fab fa-html5", "fab fa-css3", "fab fa-js"],
-      deployed: "https://hardcore-knuth-2b2ac0.netlify.app/",
-      year: 2020
+      deployed: "https://victorious-forest-0f1514b10.azurestaticapps.net/",
+      year: 2021
     },
     {
       title: "WoW Class Tracker",
