@@ -1,4 +1,4 @@
-const buttons = Array.from(document.querySelectorAll('.button'));
+const buttons = Array.from(document.querySelectorAll('.button')); // Converting NodeList to an array to access arr methods
 const sideBarLinks = Array.from(document.querySelectorAll('.sidebar-link'));
 
 function assignEvent(arr) {
