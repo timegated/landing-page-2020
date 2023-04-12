@@ -2,7 +2,7 @@ import typeEffectOnScreen from "./effects/typeEffect.js";
 import container from "./containers/container.js";
 import handleScroll from "./effects/scrollTo.js";
 import { observer } from "../js/lazy/observer.js";
-import resume from "../images/DJBResume_WebDev.pdf";
+import resume from "../images/Resume.pdf";
 import introSVG from '../images/intro.svg';
 import "../css/main.scss";
 
