@@ -1,5 +1,5 @@
 import wowClassTracker from '../../images/wowclasstracker.png';
-import gemStudy from '../../images/gem-study.png';
+import gsi from '../../images/gsi-1.png';
 import tenth from '../../images/tenth.png';
 import githubfinder from '../../images/github-finder.png';
 import tictactoe from '../../images/tic-tac-toe.PNG';
@@ -29,13 +29,12 @@ const container = {
       year: 2020
     },
     {
-      title: "Gem Study Tools",
-      summary: "An interactive way for people studying gemology to store information they find about gem stones.",
-      image: gemStudy,
-      github: "https://github.com/timegated/gem-study-tool",
+      title: "Germ Science Investigation",
+      summary: "A web based trivia game launched in Canada and the US",
+      image: gsi,
       stack: ["fab fa-react", "fab fa-node-js", "fas fa-database"],
-      deployed: "https://gem-study-tools.herokuapp.com/",
-      year: 2020
+      deployed: "https://gsi.learnbyloci.com",
+      year: 2022
     },
     {
       title: "Github Finder",

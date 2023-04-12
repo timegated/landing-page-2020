@@ -5,6 +5,9 @@ module.exports = {
   entry: {
     main: "./src/js/index.js",
   },
+  devServer: {
+    port: 3001
+  },
   module: {
     rules: [
       {
